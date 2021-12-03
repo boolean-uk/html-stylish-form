@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <section class="form">
+      <div class="form-box">
+        <form action="">
+          <h1 class="form-content title">Say Hello!</h1>
+          <div class="form-content">
+            <label for="name"> Your Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <div class="form-content">
+            <label for="email">Email </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+
+          <div class="form-content">
+            <label for="service">Needed Service</label>
+            <select id="service" name="service">
+              <option value="CS">Customer Service</option>
+              <option value="RG">Return Goods</option>
+              <option value="Com">Complain</option>
+              <option value="Rv">Review</option>
+            </select>
+          </div>
+
+          <div class="form-content">
+            <label for="budget">Select Budget</label>
+            <select id="budget" name="Budget">
+              <option value="bdg">10k</option>
+              <option value="bdg">20k</option>
+              <option value="bdg">30k</option>
+              <option value="bdg">40k</option>
+            </select>
+          </div>
+
+          <div class="form-content">
+            <label for="message">Message</label>
+            <textarea placeholder="Your message here..."></textarea>
+          </div>
+
+          <div class="form-content">
+            <button type="button">Submit &RightArrow;</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
