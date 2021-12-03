@@ -6,7 +6,6 @@ body {
     background-image: linear-gradient(to  right, #58b2df, #b743ef);
 }
 
-
 form {
     display: inline-block;
     background-color: white;
@@ -88,6 +87,7 @@ textarea {
 }
 
 
+/* ANIMATION AND STYLING FOR VALID/INVALID INPUTS*/
 
 input:invalid {
     background-image: linear-gradient(to right, #b743ef, #58b2df);
