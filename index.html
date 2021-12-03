@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Full Stack Portfolio</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Stylish Form</title>
+</head>
+
+<body>
+  <form method="submit" action="thanks.html"> >
+    <h1>Say Hello!</h1>
+    <label>
+      <p>Your Name</p>
+      <input type="text" placeholder="Enter your name" required/>
+    </label>
+    <hr />
+    <br>
+    <label></label>
+    <p>Email</p>
+    <input type="email" required placeholder="Enter your email address" />
+    </label>
+    <hr />
+    <br>
+    <label>
+      <p>Needed Services</p>
+      <select class="options" name="Needed Services">
+        <option value="0">Choose Services</option>
+        <option value="1">Chocolate</option>
+        <option value="2" disabled>Pop</option>
+      </select>
+    </label>
+    <hr />
+    <br>
+    <label>
+      <p>Budget</p>
+      <select class="options" name="budget">
+        <option value="0">Select Budget</option>
+        <option value="1">£0.00 - £20.00</option>
+        <option value="2">£21.00 - £50.00</option>
+      </select>
+    </label>
+    <hr />
+    <br>
+    <label>
+      <p>Message</p>
+      <textarea placeholder="Your message here..."></textarea>
+    </label>
+    <hr />
+    <br>
+  <label class="bottom-button">
+      <input class="submit" type="submit" />
+  </label>
+  </form>
+
+</body>
+
 </html>

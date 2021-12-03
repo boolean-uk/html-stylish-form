@@ -1,0 +1,105 @@
+* {
+    margin: 1px transparent;
+}
+
+body {
+    background-image: linear-gradient(to  right, #58b2df, #b743ef);
+}
+
+
+form {
+    display: inline-block;
+    background-color: white;
+    width: 430px;
+    position: absolute;
+    top: -20px;
+    left: 600px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    place-content: center;
+    margin: 40px;
+}
+
+hr {
+    display: grid;
+    margin-right: 20px;
+    border-top: 1px solid rgb(197, 195, 195);
+    width: 390px;
+}
+
+h1 {
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: transparent;
+    font-size: 17px;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: transparent;
+    font-size: 17px;
+    box-sizing: border-box;
+    width: 380px;
+    height: 100px;
+}
+
+.options {
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: transparent;
+    font-size: 17px;
+    color: grey;
+    width: 380px;
+}
+
+.bottom-button {
+    display: grid;
+    place-items: center;
+
+    position: relative;
+    top: 0px;
+    left: -10px;
+}
+
+.submit {
+    padding-right: 150px;
+    padding-left: 170px;
+    border-radius: 20px;
+    height: 40px;
+    background-image: linear-gradient(to right, #b743ef, #58b2df);
+    color: white;
+}
+
+
+
+input:invalid {
+    background-image: linear-gradient(to right, #b743ef, #58b2df);
+  }
+  input:valid {
+    background-color: rgb(134, 255, 134)
+  }
+
+  form:invalid {
+    border: 2px solid #b743ef;
+  }
+
+  form:valid {
+    border: 2px solid #58b2df;
+  }
