@@ -13,40 +13,34 @@
         <form action="">
           <h1 class="form-content title">Say Hello!</h1>
           <div class="form-content">
-            <label for="name"> Your Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              required
-              placeholder="Enter your name"
-            />
+            <p>Your Name</p>
+            <label for="name"> Enter your name</label>
+            <input type="text" name="name" id="name" required />
           </div>
 
           <div class="form-content">
-            <label for="email">Email </label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email address"
-              required
-            />
+            <p>Email</p>
+            <label for="email">Enter your email address</label>
+            <input type="email" name="email" id="email" required />
           </div>
 
           <div class="form-content">
-            <label for="service">Needed Service</label>
+            <p>Needed Services</p>
+            <label for="service">Choose Services</label>
             <select id="service" name="service">
+              <option value=""></option>
               <option value="CS">Customer Service</option>
               <option value="RG">Return Goods</option>
-              <option value="Com">Complain</option>
+              <option value="Com">Complaine</option>
               <option value="Rv">Review</option>
             </select>
           </div>
 
           <div class="form-content">
+            <p>Budget</p>
             <label for="budget">Select Budget</label>
             <select id="budget" name="Budget">
+              <option value=""></option>
               <option value="bdg">10k</option>
               <option value="bdg">20k</option>
               <option value="bdg">30k</option>
@@ -55,12 +49,13 @@
           </div>
 
           <div class="form-content">
-            <label for="message">Message</label>
-            <textarea placeholder="Your message here..."></textarea>
+            <p>Message</p>
+            <label for="message">Your message here...</label>
+            <textarea placeholder=""></textarea>
           </div>
 
           <div class="form-content">
-            <button type="button">Submit &RightArrow;</button>
+            <button class="btn" type="button">Submit &RightArrow;</button>
           </div>
         </form>
       </div>
