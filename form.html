@@ -8,9 +8,9 @@
     <title>Form</title>
   </head>
   <body>
-    <section class="form">
-      <div class="form-box">
-        <form action="">
+    <section>
+      <div class="form">
+        <form>
           <h1 class="form-content title">Say Hello!</h1>
           <div class="form-content">
             <p>Your Name</p>
@@ -28,7 +28,7 @@
             <p>Needed Services</p>
             <label for="service">Choose Services</label>
             <select id="service" name="service">
-              <option value=""></option>
+              <option class="hide-text" value=""></option>
               <option value="CS">Customer Service</option>
               <option value="RG">Return Goods</option>
               <option value="Com">Complaine</option>
@@ -40,7 +40,7 @@
             <p>Budget</p>
             <label for="budget">Select Budget</label>
             <select id="budget" name="Budget">
-              <option value=""></option>
+              <option class="hide-text" value=""></option>
               <option value="bdg">10k</option>
               <option value="bdg">20k</option>
               <option value="bdg">30k</option>
@@ -51,11 +51,11 @@
           <div class="form-content">
             <p>Message</p>
             <label for="message">Your message here...</label>
-            <textarea placeholder=""></textarea>
+            <textarea id="message" name="message"> </textarea>
           </div>
 
           <div class="form-content">
-            <button class="btn" type="button">Submit &RightArrow;</button>
+            <button class="btn" type="submit">Submit &RightArrow;</button>
           </div>
         </form>
       </div>
