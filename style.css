@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom left, #0cbaba, #8b1788);
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+form {
+    background-color: white;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+    border-radius: 0.7rem;
+    width: 40%;
+    height: 90%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+label {
+    display: block;
+    color: #A9A5B2;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
+
+input {
+    border: none;
+    border-bottom: solid 3px #EBEBEB;
+    width: 100%;
+    padding: 0.7rem;
+}
+
+select {
+    border: none;
+    border-bottom: solid 3px #EBEBEB;
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+}
+
+textarea {
+    border: none;
+    border-bottom: solid 3px #EBEBEB;
+    width: 100%;
+    height: 15%;
+    padding: 0.7rem;
+}
+
+button {
+    color: white;
+    background-image: linear-gradient(to right, #0cbaba, #8b1788);
+    border-radius: 2rem;
+    border: none;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+::placeholder { 
+    color: #EBEBEB;
+    font-size: 1.1rem;
+    opacity: 1; 
+  }
+  
+  :-ms-input-placeholder { 
+    color: #EBEBEB;
+    font-size: 1.1rem;
+  }
+  
+  ::-ms-input-placeholder { 
+    color: #EBEBEB;
+    font-size: 1.1rem;
+  }
+
+  input:required:valid {
+    border-color: green;
+  }
+
+  input:focus:required:invalid {
+    border-color: red;
+  }
+
+  select:required:valid {
+    border-color: green;
+  }
+
+  select:focus:required:invalid {
+    border-color: red;
+  }
+
+  button:hover {
+      cursor: pointer;
+  }
