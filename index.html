@@ -14,7 +14,7 @@
   <main>
     <section class="inputForm">
 
-      <form action="second-page.html" method="post">
+      <form action="./second-page.html" method="GET">
         <h2>Say Hello!</h2>
         <label for="name">Your Name</label>
         <input type="text" id="name" pattern="[A-Za-z]{1,}" required title="Only characters are allowed"
@@ -26,7 +26,7 @@
 
         <label for="services">Needed Services </label>
         <select name="services" id="services" required>
-          <option value="">Choose Services</option>
+          <option value="" disabled>Choose Services</option>
           <option value="newWebsite">Create a new Website</option>
           <option value="changeWebsite">Make changes to current website</option>
           <option value="fullBundle">Full Bundle</option>
@@ -34,14 +34,14 @@
 
         <label for="budget">Budget</label>
         <select name="budget" id="budget" required>
-          <option value="">Select Budget</option>
+          <option value="" disabled>Select Budget</option>
           <option value="min">Less than 500£</option>
           <option value="med">500 - 1,000£</option>
           <option value="max">More than 1,000£</option>
         </select>
 
         <label for="messages">Messages</label>
-        <textarea name="messages" id="messages" placeholder="" cols="30" rows="10" contenteditable></textarea>
+        <textarea name="messages" id="messages" placeholder="" cols="30" rows="10" contenteditable required></textarea>
 
         <input type="submit" value="submit" id="submit" required />
 
