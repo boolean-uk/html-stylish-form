@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Full Stack Portfolio</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Full Stack Portfolio</title>
+</head>
+
+<body>
+
+  <main>
+    <section class="inputForm">
+
+      <form action="./second-page.html" method="GET">
+        <h2>Say Hello!</h2>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" pattern="[A-Za-z]{1,}" required title="Only characters are allowed"
+          placeholder="Enter your name">
+
+        <label for="email">Email</label>
+
+        <input type="email" id="email" required placeholder="Enter your email address" />
+
+        <label for="services">Needed Services </label>
+        <select name="services" id="services" required>
+          <option value="" disabled>Choose Services</option>
+          <option value="newWebsite">Create a new Website</option>
+          <option value="changeWebsite">Make changes to current website</option>
+          <option value="fullBundle">Full Bundle</option>
+        </select>
+
+        <label for="budget">Budget</label>
+        <select name="budget" id="budget" required>
+          <option value="" disabled>Select Budget</option>
+          <option value="min">Less than 500£</option>
+          <option value="med">500 - 1,000£</option>
+          <option value="max">More than 1,000£</option>
+        </select>
+
+        <label for="messages">Messages</label>
+        <textarea name="messages" id="messages" placeholder="" cols="30" rows="10" contenteditable required></textarea>
+
+        <input type="submit" value="submit" id="submit" required />
+
+      </form>
+    </section>
+  </main>
+
+</body>
+
 </html>
