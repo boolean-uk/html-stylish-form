@@ -5,9 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Full Stack Portfolio</title>
+    <title>Services Form</title>
   </head>
   <body>
+    <form action="#">
+      <h1>Say Hello!</h1>
 
+      <div class="input-group">
+          <label for="firstLastName">Your Name</label>
+          <input name="firstLastName" type="text" required placeholder="Enter your name">
+      </div>
+
+      <div class="input-group">
+          <label for="emailAddress">Email</label>
+          <input name="emailAddress" type="email" minlength="4" required placeholder="Enter your email address">
+      </div>
+
+      <div class="input-group">
+          <label for="service">Needed Services</label>
+          <select id="service" name="services" required>
+              <option value="" class="emptySelection">Choose Services</option>
+              <option value="Capentry">Capentry</option>
+              <option value="ElectricMaintenance">Electric Maintenance</option>
+              <option value="Plumbing">Plumbing</option>
+          </select>
+      </div>
+
+      <div class="input-group">
+          <label for="budget">Budget</label>
+          <select id="budget" name="budget" required>
+              <option value="" class="deemphasized-text">Select Budget</option>
+              <option value="100-200">&#xA3; 100 to 200</option>
+              <option value="201-500">&#xA3; 201 to 500</option>
+              <option value="501-1000">&#xA3; 501 - 1000</option>
+          </select>
+      </div>
+
+      <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message here&#8230;"></textarea>
+      </div>
+
+      <div class="input-group">
+          <button type="submit" id="gradientButton">Submit &#8594</button>
+      </div>
+  </form>
   </body>
 </html>
