@@ -113,3 +113,7 @@ a.gradientButton {
   text-align: center;
   margin-bottom: 2em;
 }
+
+.thankyou-form {
+  height: 100vh;
+}
