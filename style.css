@@ -51,9 +51,9 @@ select:valid {
   border-bottom: 2px solid lightgreen;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
+input:focus-within,
+select:focus-within,
+textarea:focus-within {
   padding: 1em;
 }
 
