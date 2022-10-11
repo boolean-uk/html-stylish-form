@@ -63,7 +63,23 @@ button {
     border-radius: 2rem;
     background:linear-gradient(to right, rgb(205, 5, 240), cyan);
     padding: 1rem;
+    width: 100%;
     border: none;
     color: white;
+    transition: 0.2s;
+}
+button:hover { /* when hovered */
+    filter: brightness(92%);
+}
+button:active { /* When pressed */
+    filter: brightness(88%);
 }
 
+.thank-you {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 4rem;
+}
