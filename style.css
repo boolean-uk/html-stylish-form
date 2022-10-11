@@ -40,3 +40,11 @@ form hr {
     margin-bottom: 20px;
 }
 
+button {
+    border-radius:40px ;
+    background:linear-gradient(to right, rgba(205, 5, 240, 0.94), cyan);
+    padding: 10px;
+    border: none;
+    color: white;
+}
+
