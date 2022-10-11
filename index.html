@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Stylish Form</title>
+  
   </head>
   <body>
 
     <main>
       
-      <form>
+      <form action="thank.html">
         <h1>Say Hello!</h1>
 
         <div class="input">
           <label for="name">Name</label>
-          <!-- <br> -->
+       
           <input 
             required
             placeholder="Enter your name"
@@ -29,7 +30,7 @@
 
         <div class="input">
           <label for="email">Email</label>
-          <!-- <br> -->
+          
           <input 
             required
             placeholder="Enter your email address"
@@ -41,7 +42,7 @@
 
         <div class="input">
           <label for="service">Needed Services</label>
-          <!-- <br> -->
+        
           <select name="service">
             <option value="choose-services" disabled selected>Choose Services</option>
             <option value="web" >Website query</option>
@@ -52,7 +53,7 @@
 
         <div class="input">
           <label for="budget">Budget</label>
-          <!-- <br> -->
+         
           <select name="budget">
             <option value="select-budget" disabled selected>Select Budget</option>
             <option value="first" >First Bracket</option>
@@ -63,7 +64,7 @@
 
         <div class="input">
           <label for="message">Message (Optional)</label>
-          <!-- <br> -->
+        
           <textarea
             name="message"
             id="message"
@@ -75,6 +76,7 @@
 
         <div class="input">
           <input type="submit" id="submit" name="submit">
+          
         </div>
     
       </form>
