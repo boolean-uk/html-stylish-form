@@ -1,5 +1,11 @@
 body {
   font-family: sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to top right,
+    rgb(83, 83, 222) 30%,
+    rgb(197, 76, 197)
+  );
 }
 
 /* main start */
@@ -9,11 +15,12 @@ form {
   width: 400px;
   display: grid;
   grid-template-rows:auto;
-  gap: 30px;
+  gap: 10px;
   padding: 25px;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  
+  height: 850px;
+  background: white;
 }
 
 .input{
@@ -24,26 +31,50 @@ form {
   /* margin: 15px;  */
 }
 
-input, textarea, select {
-  border: 0;
-  /* outline: 0; */
+input, textarea, select{
+  border: none;
+  outline: none;
   border-bottom: solid #D6D6D6 1px;
 
 }
 
-h1 {
-  text-align: center;
+select {
+  border-top: solid white 1px;
+  border-left: solid white 1px;
+  border-right: solid white 1px;
 }
 
-.input textarea{
+h1 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+textarea{
   height: 120px;
   margin-top: 15px;
 }
 
 #submit{
   margin-top: 60px;
-  height: 40px;
- 
+  height: 45px;
+  border-radius: 25px;
+  background-image: linear-gradient(
+    to right,
+    rgb(183, 83, 222) 20%,
+    rgb(118, 184, 201)
+  );
+  color: white;
+  font-weight: bold;
+}
+
+label {
+  color: #A18B8C;
+  font-size: 15px;
+}
+
+::placeholder {
+  color: #D4D2D8;
+  font-weight: bold;
 }
 
 /* main end */
