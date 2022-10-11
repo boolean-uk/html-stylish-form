@@ -14,24 +14,57 @@
       <form>
         <h1>Say Hello!</h1>
         <div class="input">
-          <label for="username">Username:</label>
+          <label for="name">Name</label>
           <input 
-            required 
-            id="username" 
+            required
+            placeholder="Enter your name"
+            id="name" 
             type="text" 
-            name="username"
+            name="name"
           >
         </div>
         <hr>
 
-        <div class="">
-          <label for="">Username:</label>
+        <div class="input">
+          <label for="email">Email</label>
           <input 
-            required 
-            id="" 
+            required
+            placeholder="Enter your email address"
+            id="email" 
             type="text" 
-            name=""
+            name="email"
           >
+        </div>
+
+        <div class="input">
+          <label for="service">Needed Services</label>
+          <select name="service">
+            <option value="choose-services" disabled selected>Choose Services</option>
+            <option value="web" >Website query</option>
+            <option value="prod">Product query</option>
+            <option value="serv">Customer service query</option>
+          </select>
+        </div>
+
+        <div class="input">
+          <label for="budget">Budget</label>
+          <select name="budget">
+            <option value="select-budget" disabled selected>Select Budget</option>
+            <option value="first" >First Bracket</option>
+            <option value="second">Second Bracket</option>
+            <option value="third">Third Bracket</option>
+          </select>
+        </div>
+
+        <div class="input">
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Your message here..."
+            cols="30"
+            rows="10"
+          ></textarea>
         </div>
 
       </form>
