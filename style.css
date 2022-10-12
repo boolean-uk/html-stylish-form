@@ -78,3 +78,18 @@ label {
 }
 
 /* main end */
+
+/* thank-you start */
+
+p {
+  margin: 50px;
+  text-align: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.thank-you-form {
+  height: 500px;
+}
+
+/* thank-you end */
