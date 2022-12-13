@@ -12,6 +12,10 @@ html {
     color: #00000050;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -53,16 +57,32 @@ form div {
     border-bottom-width: 2px;
 }
 
-
 form div label {
     align-self: end;
     color: #555;
 }
 
 form div input {
+    margin-bottom: .2rem;
     padding: .5rem 0rem 1rem;
+    border-radius: 10px;
     font-size: 18px;
     border: none;
+}
+
+form input + span {
+    position: relative;
+}
+
+form input + span::before {
+    position: absolute;
+    right: 0;
+    top: -4.5rem;
+}
+
+form input:invalid + span::before {
+    content: "required";
+    color: #ff0000a1;
 }
 
 form div select {
@@ -70,7 +90,21 @@ form div select {
     font-size: 18px;
     border-radius: 5px;
     border: none;
+}
 
+form div select + span {
+    position: relative;
+}
+
+form div select + span::before {
+    position: absolute;
+    right: 0;
+    top: -4.5rem;
+}
+
+form div select:invalid + span::before {
+    content: "required";
+    color: #ff0000a1;
 }
 
 form div #message {
@@ -79,13 +113,23 @@ form div #message {
 
 .submitcontainer {
     border: none;
+    border-radius: 20px;
+    background: linear-gradient(270deg, #59BEDE 20%, #C53EF1);
 }
 
-.submitcontainer button{
+.submitcontainer input.submit{
+    width: 100%;
+    height: 100%;
     text-align: center;  
+    font-weight: bold;
     background: linear-gradient(270deg, #59BEDE 20%, #C53EF1);
     border: none;
     border-radius: 20px;
     color: white;
     padding: 15px;
+}
+
+.submitcontainer input.submit:hover {
+    transition: all .8s ease;
+    background: #C53EF1;
 }

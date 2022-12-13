@@ -15,44 +15,48 @@
     <div class="maincontainer">
         <div class="title"><h1>Say Hello!</h1></div>
 
-      <form action="">
+      <form action="./thanks.html">
         <div class="namecontainer">
           <label for="username">Your Name</label>
-          <input type="text" id="username" placeholder="Enter your name">
+          <input type="text" id="username" placeholder="Enter your name" required minlength="2">
+          <span></span>
         </div>
         
         <div class="emailcontainer">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email address">
+            <input type="email" id="email" placeholder="Enter your email address" required>
+            <span></span>
         </div>
 
         <div class="neededservicescontainer">
           <label for="CS">Needed Services</label>
-          <select name="chooseservices" id="CS">
-            <option value="option1">Choose Services</option>
-            <option value="option2">front end design</option>
-            <option value="option3">back end design</option>
-            <option value="option4">full stack design</option>
+          <select name="chooseservices" id="CS" required>
+            <option value="">Choose Services</option>
+            <option value="option1">front end design</option>
+            <option value="option2">back end design</option>
+            <option value="option3">full stack design</option>
           </select>
+          <span></span>
         </div>
 
         <div class="budgetcontainer">
           <label for="buget">Budget</label>
-          <select name="budget" id="budget">
-            <option value="option1">Select Budget</option>
-            <option value="option2">0-20k</option>
-            <option value="option3">21k-40k</option>
-            <option value="option4">41k-100k</option>
+          <select name="budget" id="budget" required>
+            <option value="">Select Budget</option>
+            <option value="option1">0-20k</option>
+            <option value="option2">21k-40k</option>
+            <option value="option3">41k-100k</option>
           </select>
+          <span></span>
         </div>
 
         <div class="messagecontainer">
           <label for="message">Message</label>  
-          <input type="text" id="message" placeholder="Your message here">
+          <input type="text" id="message" placeholder="Your message here" height="">
         </div>
 
         <div class="submitcontainer">
-          <button type="submit">Submit →</button>  
+          <input type="submit" class="submit">
         </div>
       </form>
     </div>
