@@ -6,8 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Stylish Form</title>
+    <script src="https://kit.fontawesome.com/59ab1ef207.js" crossorigin="anonymous"></script>
   </head>
   <body>
+  <div class="container">
+<form id = "helloform" action = "./Thanks.html" >
+  <div class="title">
+    <h1> Say Hello! </h1>
+  </div>
+  <div class="name">
+    <div class = "label"> 
+      <label for ="your name"> Your Name </label></div>
+        <div class = "i-feild">
+         <input type ="text" id ="your name" placeholder =" Enter your name"  required/>
+       <hr>
+      </div>
+  </div>
+  
+  <div class="email">
+    <div class = "label"> 
+    <label for = "email"> Email</label></div>
+    <div class = "i-feild">
+      <input type ="text" id ="email" placeholder =" Enter your email address" required/> 
+      <hr>
+    </div>
+  </div>
+  <div class="services">
+    <div class = "label"> 
+    <label for = "services">Needed services</label></div>
+    <div class = "i-feild">
+    <select id = "services">
+      <option value="Front-end">Choose courses</option>
+      <option value="Front-end">Front-end developer</option>
+      <option value="Back-end">Back-end developer</option>
+      <option value="Fullstack">Fullstack developer</option>
+      <option value="Data analyst">Data analyst</option> 
+    </select>
+    <hr>
+    </div>
+   
+  </div>
+  <div class="budget">
+    <div class = "label"> 
+    <label for = "Budget">Budget </label></div>
+   
+    <div class = "i-feild">      
+     <select id = "Budget">
+      <option value="select-budget">Select-Budget</option>
+      <option value="Front-end">6000 Euros</option>
+      <option value="Back-end">7000 Euros</option>
+      <option value="Fullstack">13000 Euros</option>
+      <option value="Data analyst">12000 Euros</option> 
+      </select>
+      <hr>
+    </div>
 
+   
+  </div>
+  <div class="message">
+    <div class = "label"> 
+    <label for ="text">Message </label></div>
+    <div class = "i-feild">  
+    <textarea id ="text" placeholder ="Your message here" maxlength="200"></textarea>
+    <hr> 
+  </div>
+  </div>
+  <div class="submit-btn">
+    <button>Submit<span><i class="fa-solid fa-arrow-right"></i></span></button>
+  </div>
+</form>
+</div>
   </body>
 </html>
