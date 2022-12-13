@@ -38,7 +38,8 @@ label {
 
 input,
 textarea,
-select {
+select,
+button {
     border: none;
 }
 
@@ -52,4 +53,9 @@ button {
     width: 90%;
     height: 40px;
     border-radius: 45px;
+    margin-left:40px ;
+    margin-top: 20px;
+
+    font-weight: 600;
+    color: white;
 }
