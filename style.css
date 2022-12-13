@@ -1,0 +1,72 @@
+p {
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+    font-size: smaller ;
+}
+h1 {
+    font-family: sans-serif;
+    place-self: center;
+    margin-bottom: 10px;
+}
+input {
+    border: none;
+    font-size: larger;
+    
+}
+::placeholder {
+    color: rgba(211, 211, 211, 0.36);
+}
+select {
+    border: none;
+    font-size: larger;
+}
+textarea {
+    border: none;
+}
+textarea ::placeholder {
+    font-family: sans-serif;
+}
+div {
+    border-bottom: lightgray 2px solid;
+}
+main {
+    display: grid;
+   place-items: center; 
+}
+form {
+    display: grid;
+    border-radius: 5px;
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+main {
+    height: 100vh;
+    background-image: linear-gradient(to top right, rgb(80, 210, 242),rgb(157, 0, 255));
+}
+button {
+    border-radius: 20px ;
+    height: 30px;
+    background-image: linear-gradient(to right,rgb(157, 0, 255),rgb(80, 210, 242));
+    border: none;
+    color: white;
+    position: relative;
+    width: 200px;
+    place-items: center;
+    
+
+}
+button svg {
+    position: absolute;
+    bottom: 1px;
+    right: 2px;
+}
+button:hover {
+    cursor: pointer;
+} 
