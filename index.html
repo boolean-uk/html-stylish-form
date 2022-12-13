@@ -5,9 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/59ab1ef207.js" crossorigin="anonymous"></script>
     <title>Stylish Form</title>
   </head>
   <body>
+    <main>
+      <form class="helloForm" action="./thankyou.html">
+       <h1>
+         Say Hello!
+       </h1>
+       
+       <div class="name">
+        <label for="enterName">
+          Your Name
+        </label>
+        <input type="text" id="enterName" placeholder="Enter your name" required>
+        <hr>
+       </div>
+       
+       <div class="email">
+        <label for="enterEmail">
+          Email
+        </label>
+        <input type="email" id="enterEmail" placeholder="Enter your email address" required>
+        <hr>
+       </div>
+       
+       <div class="neededServices">
+        <label for="neededServices">
+          Needed Services
+        </label>
+        <select name="" id="neededServices">
+          <option value="chooseServices">Choose Services</option>
+          <option value="">Front End Development</option>
+          <option value="">Back End Development</option>
+          <option value="">Data Analysis</option>
+        </select>
+        <hr>
+       </div>
 
+       <div class="budget">
+        <label for="selectBudget">
+          Budget
+        </label>
+        <select name="" id="">
+          <option value="">Select budget</option>
+          <option value="">up to £1000</option>
+          <option value="">£1k-5k</option>
+          <option value="">above £5k </option>
+        </select>
+        <hr>
+       </div>
+
+       <div class="message">
+        <label>Message</label>
+        <textarea placeholder="Your message here.." maxlength="200"></textarea>
+        <hr>
+       </div>
+
+       <div class="submitButton">
+        <button type="submit">Submit <i class="fa-solid fa-arrow-right"></i> </button>
+       </div>
+       
+
+      </form>
+    </main>
   </body>
 </html>
