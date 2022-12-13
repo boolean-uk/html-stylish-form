@@ -4,10 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Stylish Form</title>
   </head>
   <body>
+    <form action="">
+      <h1>How can we help?</h1>
+      <label for="name">Your Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required />
 
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="support@quacker.com"
+        required
+      />
+
+      <label for="services">Services</label>
+      <select name="services" id="services" required>
+        <option value="" selected disabled>Choose Service</option>
+        <option value="web">Webapp</option>
+        <option value="server">Server</option>
+        <option value="app">Mobile App</option>
+      </select>
+
+      <label for="budget">Budget</label>
+      <select name="budget" id="budget">
+        <option value="" selected disabled>Select Budget</option>
+        <option value="small">¥20,000 - ¥34,999</option>
+        <option value="mid">¥35,000 - ¥59,999</option>
+        <option value="large">¥60,000+</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Tell us more..."
+      ></textarea>
+
+      <button type="submit">
+        <em><b>Submit ➡️</b></em>
+      </button>
+    </form>
   </body>
 </html>
