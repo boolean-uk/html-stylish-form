@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #59BEDE 20%, #C53EF1);
+    display: grid;
+    grid-template-areas: ". main .";
+    grid-template-columns: 1fr minmax(300px, 500px) 1fr;
+    gap: 25px;
+}
+
+.maincontainer {
+    grid-area: main;
+    align-self: center;
+    height: 800px;
+    margin: 10% 0;
+    padding: 2rem 3rem;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.maincontainer .title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #313335;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.maincontainer svg {
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    height: 250px;
+    width: 250px;
+    fill: #aaa;
+}
+
+.maincontainer .message {
+    font-size: 20px;
+    text-align: center;
+    color: #313335;
+}
