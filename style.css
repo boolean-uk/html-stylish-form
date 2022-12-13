@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  display: grid;
+  place-items: center;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.622);
+  width: 45%;
+  height: 85%;
+  padding: 2rem 3.5rem 2rem 3.5rem;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  font-family: "Lobster", cursive;
+}
+
+input {
+  border: none;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 2px solid black;
+}
+
+input:required:valid {
+  border-color: greenyellow;
+}
+
+input:focus:required:invalid {
+  border-color: rgb(242, 76, 76);
+  animation: shake 300ms;
+}
+
+select {
+  border: none;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 2px solid black;
+}
+
+select:required:valid {
+  border-color: greenyellow;
+}
+
+select:focus:required:invalid {
+  border-color: rgb(242, 76, 76);
+  animation: shake 300ms;
+}
+
+label {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+textarea {
+  border: none;
+  width: 100%;
+  height: 15%;
+  padding: 15px;
+  border-bottom: 2px solid black;
+}
+
+button {
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 1.75rem;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+input,
+select,
+textarea {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shake {
+  25% {
+    transform: translateX(4px);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}
