@@ -1,0 +1,55 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, rgba(0, 187, 255, 0.466), rgba(128, 0, 128, 0.759));
+    display: grid;
+    grid-template-columns: 200px minmax(500px, 1fr) 200px;
+    grid-template-areas:
+        ". form ."
+}
+
+hr {
+    color: grey;
+    width: 400px;
+}
+
+form {
+    height: 90vh;
+    grid-area: form;
+    display: grid;
+    background-color: white;
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+label {
+    padding: 15px;
+    display: grid;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px grey solid;
+}
+
+input,
+textarea,
+select {
+    border: none;
+}
+
+input {
+    width: 50%;
+    height: 40px;
+}
+
+button {
+    background: linear-gradient(to right, rgba(128, 0, 128, 0.759), rgba(0, 187, 255, 0.466));
+    width: 90%;
+    height: 40px;
+    border-radius: 45px;
+}
