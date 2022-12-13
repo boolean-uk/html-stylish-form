@@ -6,8 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Stylish Form</title>
+  
   </head>
   <body>
 
+    <main>
+      
+      <form action="thank-you.html">
+        <h1>Say Hello!</h1>
+
+        <div class="input">
+          <label for="name">Name</label>
+       
+          <input 
+            required
+            placeholder="Enter your name"
+            id="name" 
+            type="text" 
+            name="name"
+            maxlength="20"
+          >
+        </div>
+
+        <div class="input">
+          <label for="email">Email</label>
+          
+          <input 
+            required
+            placeholder="Enter your email address"
+            id="email" 
+            type="email" 
+            name="email"
+          >
+        </div>
+
+        <div class="input">
+          <label for="service">Needed Services</label>
+        
+          <select name="service">
+            <option value="choose-services" disabled selected>Choose Services</option>
+            <option value="web" >Website query</option>
+            <option value="prod">Product query</option>
+            <option value="serv">Customer service query</option>
+          </select>
+        </div>
+
+        <div class="input">
+          <label for="budget">Budget</label>
+         
+          <select name="budget">
+            <option value="select-budget" disabled selected>Select Budget</option>
+            <option value="first" >First Bracket</option>
+            <option value="second">Second Bracket</option>
+            <option value="third">Third Bracket</option>
+          </select>
+        </div>
+
+        <div class="input">
+          <label for="message">Message (Optional)</label>
+        
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Your message here..."
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div class="input">
+          <input type="submit" id="submit" name="submit">
+          
+        </div>
+    
+      </form>
+    </main>    
   </body>
 </html>
