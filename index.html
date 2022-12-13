@@ -7,7 +7,46 @@
     <link rel="stylesheet" href="style.css" />
     <title>Stylish Form</title>
   </head>
-  <body>
+  <body class="main">
+
+
+    <form class="sign-up-form">
+      <header class="hello"><h1>Say Hello!</h1></header>
+      <label>
+        <p>Your Name</p>
+        <input input="text" placeholder="Enter your Name" name="name"></input>
+      </label>
+      <label>
+        <p>Email</p>
+        <input input="text" placeholder="Enter your email address" name="email"></input>
+      </label>
+      <label>
+        <p>Needed Services</p>
+        <select name="services">
+          <option value="" disabled selected hidden>Choose Services</option>
+          <option value="option1"> Upgrade </option>
+          <option value="option1"> Redesign </option>
+          <option value="option1"> Complete reconstruction</option>
+        </select>
+      </label>
+      <label>
+        <p>Budget</p>
+        <select name="budget"> 
+          <option value="" disabled selected hidden>Select Budget</option>
+          <option value="option1"> £0 - £999</option>
+          <option value="option2"> £1000 - £1999 </option>
+          <option value="option3"> £2000 - £4000 </option>
+        </select>
+      </label>
+      <label>
+        <p>Message</p>
+        <textarea input="text" placeholder="Your message here..." name="message"></textarea>
+      </label>
+    
+      <button type="submit">Submit <img> </button>
+
+
+    </form>
 
   </body>
 </html>
