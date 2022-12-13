@@ -47,6 +47,7 @@ form {
     padding-bottom: 20px;
 }
 main {
+    height: 100vh;
     background-image: linear-gradient(to top right, rgb(80, 210, 242),rgb(157, 0, 255));
 }
 button {
@@ -55,4 +56,17 @@ button {
     background-image: linear-gradient(to right,rgb(157, 0, 255),rgb(80, 210, 242));
     border: none;
     color: white;
+    position: relative;
+    width: 200px;
+    place-items: center;
+    
+
 }
+button svg {
+    position: absolute;
+    bottom: 1px;
+    right: 2px;
+}
+button:hover {
+    cursor: pointer;
+} 
