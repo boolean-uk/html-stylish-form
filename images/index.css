@@ -1,0 +1,85 @@
+body {
+    grid-template-columns: 1fr 350px 1fr;
+    grid-template-areas: " . container . ";
+    display: grid;
+    background: linear-gradient(to left bottom,rgb(217, 75, 227), rgb(60, 185, 226));
+}
+
+.container {
+    grid-area: container;
+    display: block;
+    line-height: 1.5;
+    border: 1px white solid;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;  
+}
+
+
+.container h2 {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+::placeholder {
+    color: rgb(212, 211, 211);
+    
+    
+}
+
+:optional {
+    color: rgb(212, 211, 211) ;
+}
+
+input {
+    width: 250px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: rgb(212, 211, 211);
+    font-size: 15px;
+  
+}
+
+select {
+    width: 250px;
+    border: none;
+    border-bottom: 2.5px solid rgb(212, 211, 211);
+    font-size: 15px;
+    
+}
+
+
+textarea {
+    width: 250px;
+    height: 100px;
+    border: none;
+    border-bottom: 2.5px solid rgb(212, 211, 211);
+    font-size: 15px;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 3; 
+}
+
+label p{
+    margin: 0;
+    padding: 0;
+}
+button{
+    place-content: center;
+    width: 255px;
+    border-radius: 20px;
+    height: 30px;
+    background: linear-gradient(to left,rgb(60, 185, 226), rgb(217, 75, 227));
+    border: none;
+    align-items: center;
+    display: flex;
+}
+
+
+svg{
+    padding-left:20px ;
+}
