@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Stylish Form</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Stylish Form</title>
+</head>
+
+<body>
+  <form>
+   
+    <h1>Say Hello!</h1>
+    <label for="name">
+      Your Name
+      <input type="text" name="name" placeholder="Enter your name" />
+    </label>
+
+    <label for="email">
+      Email
+      <input type="email" name="email" placeholder="Enter your email adress" />
+    </label>
+
+
+    <label for="NeededServices">
+      Needed Services
+      <select name="Services">
+        <option value="0">Choose Services</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+    </label>
+
+
+    <label for="NeededServices">
+      Budget
+      <select name="Services">
+        <option value="0">Select Budget</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+    </label>
+  
+    <label for="message">
+      Message
+      <textarea>Your message here...</textarea>
+    </label>
+
+      <button>Submit --></button>
+   
+  </form>
+</body>
+
 </html>
