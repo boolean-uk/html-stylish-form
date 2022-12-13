@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Stylish Form</title>
-  </head>
-  <body>
-
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <article class="mainContent">
+            <section class="signUpCard">
+                <div class="title">
+                    <h1>Say Hello!</h1>
+                </div>
+                <form action="thankYou.html" class="signUp">
+                    <label class="yourName">
+                        <p>Your Name</p>
+                        <input type="text" name="name"  autocomplete="off" placeholder="Enter your name" required>
+                    </label>
+                    <hr>
+                    <label class="email">
+                        <p>Email</p>
+                        <input type="email" name="email" autocomplete="off" placeholder="Enter your email address" required>
+                    </label>
+                    <hr>
+                    <label class="servicesDropdown">
+                        <p>Needed Services</p>
+                        <select name="services" required>
+                            <option value="na">Choose Services</option>
+                            <option value="serv1">First Service</option>
+                            <option value="serv2">Second Service</option>
+                            <option value="serv3">Third Service</option>
+                            <option value="serv4">Fourth Service</option>
+                            <option value="serv5">Fifth Service</option>
+                        </select>
+                    </label>
+                    <hr>
+                    <label class="budgetDropdown">
+                        <p>Budget</p>
+                        <select name="budget" required>
+                            <option value="na">Select Budget</option>
+                            <option value="low">£0-9</option>
+                            <option value="mid">£10-49</option>
+                            <option value="high">£50-99</option>
+                            <option value="whale">£100+</option>
+                        </select>
+                    </label>
+                    <hr>
+                    <label class="message">
+                        <p>Message</p>
+                        <input type="text" name="message" placeholder="Your message here">
+                    </label>
+                    <hr class="lastHr">
+                    <button type="submit">Submit &#x27A1</button>
+                </form>
+            </section>
+        </article>
+    </main>
+</body>
 </html>
