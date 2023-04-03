@@ -8,6 +8,35 @@
     <title>Stylish Form</title>
   </head>
   <body>
-
+    <form action="submit.html">
+      <h1>Say Hello!</h1>
+      <label for="user-name">Your Name</label>
+      <input id="user-name" type="text" placeholder="Enter your name" required>
+      <hr>
+      <label for="user-email">Email</label>
+      <input id="user-email" type="email" placeholder="Enter your email address" required>
+      <hr>
+      <label for="course">Required Course</label>
+      <select name="course" id="course" placeholder="Select course" required>
+        <option value="" disabled selected>Select Course</option>
+        <option value="FE">Front End</option>
+        <option value="BE">Back End</option>
+        <option value="FS">Full Stack</option>
+        <option value="DA">Data Analytics</option>
+      </select>
+      <hr>
+      <label for="time-frame">Duration</label>
+      <select name="time-frame" id="time-frame" required>
+        <option value="" disabled selected>Select Duration</option>
+        <option value="3m">3 Months</option>
+        <option value="6m">6 Months</option>
+        <option value="9m">9 Months</option>
+      </select>
+      <hr>
+      <label for="message">Message</label>
+      <textarea name="message" id="message" placeholder="Your message here..."></textarea>
+      <hr>
+      <input type="submit" value="Submit →">
+    </form>
   </body>
 </html>
