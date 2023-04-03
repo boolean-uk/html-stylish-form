@@ -9,26 +9,53 @@
   </head>
   <body>
     <section class="grid">
+      
       <form class="form">
-        <!-- title of form -->
-
+        <h1>say Hello!</h1>
         <!-- name -->
-
+        <label>Your Name
+          <br>
+        <input type="text" placeholder="Enter your name">
         <hr/>
+        </label>
+        
         <!-- email -->
-
-        <hr/>
+        <label>Email
+          <br>
+          <input type="email" placeholder="Enter your email address">
+          <hr/>
+        </label>
+      
         <!-- needed service - select -->
-
-        <hr/>
+        <label>Needed Service
+          <br>
+          <select name="service">
+            <option value="treeStuff">Gardening</option>
+            <option value="dogW">Dog wash</option>
+            <option value="brickC">Brick cleaning</option>
+          </select>
+          <hr/>
+        </label>
+        
         <!-- budget - select -->
-
-        <hr/>
+        <label>Budget Select
+          <br>
+          <select name="Budget">
+            <option value="25">£25</option>
+            <option value="50">£50</option>
+            <option value="100">£100</option>
+          </select>
+          <hr/>
+        </label>
+       
         <!-- message - textarea-->
-
+        <label>Message
+          <br>
+          <textarea placeholder="Write your message here" name="message" rows="5" maxlength="200"></textarea>
+        </label>
         <hr/>
         <!-- namesubmit button -->
-        
+        <input type="submit">
       </form>
     </section>
   </body>
