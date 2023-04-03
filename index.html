@@ -8,6 +8,88 @@
     <title>Stylish Form</title>
   </head>
   <body>
+    <!-- Build a form for customer enquires
+    Replicate this form the closest you can
+The form should sit in the middle of the page
+Add validation to it -->
 
+    <form>
+      <!-- Say Hello! Title -->
+      <div class="Say-Hello"><h1>Say Hello!</h1></div>
+      <br />
+
+      <!-- Username -->
+      <div class="main-section">
+        <label class="Your-Name">Your Name</label>
+        <br />
+        <br />
+        <div class="enter-your-name">
+          <input placeholder="Enter your name" />
+        </div>
+        <br />
+        <hr />
+        <!-- Email -->
+        <br />
+
+        <label class="Your-Email">Email</label>
+        <div class="enter-your-email-address">
+          <br />
+
+          <input placeholder="Enter your email address" />
+        </div>
+        <br />
+        <hr />
+        <br />
+
+        <!-- Services Needed -->
+        <label class="select-option1">Services Needed</label>
+        <br />
+        <br />
+        <select class="select-service">
+          <option>Choose Services</option>
+          <option>Plumbing</option>
+          <option>Electrical and Lighting</option>
+          <option>Air Conditioning</option>
+          <option>Pest Control</option>
+          <option>Gardening</option>
+        </select>
+
+        <br />
+        <br />
+        <hr />
+        <!--Budget-->
+        <br />
+        <label class="select-option2">Budget</label>
+        <br />
+        <br />
+        <select class="select-budget-for-services">
+          <option>Select Budget</option>
+        </select>
+        <br />
+        <!-- Your message -->
+        <br />
+        <hr />
+        <br />
+        <label class="message">Message</label>
+        <br />
+        <br />
+        <textarea
+          minlength="20"
+          maxlength="500"
+          class="Your-Message"
+          cols="45  "
+          rows="7"
+        >
+Your message here...</textarea
+        >
+        <br />
+        <hr />
+
+        <!-- Submit Button -->
+        <br />
+        <label>Submit</label>
+        <input type="button" value="submit" />
+      </div>
+    </form>
   </body>
 </html>
