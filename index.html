@@ -8,24 +8,24 @@
     <title>Stylish Form</title>
   </head>
   <body>
-    <form>
+    <form action="./thanks.html" method="get">
         <h1>Say Hello!</h1>
       <label>
         Your Name
         <br>
-        <input type="text" placeholder="Enter your name">
+        <input type="text" placeholder="Enter your name" required>
       </label>
       <hr>
       <label>
         Email
         <br>
-        <input type="email" placeholder="Enter your email addess">
+        <input type="email" placeholder="Enter your email addess" required>
       </label>
       <hr>
       <label>
         Needed Services
         <br>
-        <select name="services" >
+        <select name="services" required>
           <option value="">Choose Services</option>
           <option value="plumber">Plumber</option>
           <option value="electrician">Electrician</option>
@@ -37,7 +37,7 @@
       <label>
         Budget
         <br>
-        <select name="budget">
+        <select name="budget" required>
           <option value="">Select Budget</option>
           <option value="1">£200</option>
           <option value="2">£400</option>
