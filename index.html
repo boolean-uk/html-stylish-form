@@ -7,34 +7,44 @@
     <link rel="stylesheet" href="style.css" />
     <title>Stylish Form</title>
   </head>
-  <body>
-    <main>
+  <body class="grid">
+    <main class="grid">
       <h1>Say Hello!</h1>
-      <form>
-        <label for="">Your Name</label>
-        <br>
-        <input type="text" name="name" value="" placeholder="Enter your name">
-        <hr>
-        <label for="">Email</label>
-        <br>
-        <input type="text" name="Email" value="" placeholder="Enter your email address">
-        <hr>
+      <form class="grid">
+        <div class="name">
+          <label for="">Your Name</label>
+          <br>
+          <input type="text" name="name" value="" placeholder="Enter your name">
+          <hr>
+        </div>
+        <div class="email">
+          <label for="">Email</label>
+          <br>
+          <input type="text" name="Email" value="" placeholder="Enter your email address">
+          <hr>
+        </div>
+        <div class="needed-services">
         <label for="">Needed Services</label>
-        <br>
-        <select name="service">
-          <option value="">Car washing</option>
-          <option value="">Lawn Mowing</option>
-          <option value="">House painting</option>
-        </select>
-        <hr>
-        <label for="">Budget</label>
-        <br>
-        <input min="0" max="10" type="number" />
-        <hr>
-        <label for="">Message</label>
-        <br>
-        <textarea rows="" cols=""></textarea>
-        <hr>
+          <br>
+          <select name="service">
+            <option value="">Car washing</option>
+            <option value="">Lawn Mowing</option>
+            <option value="">House painting</option>
+          </select>
+          <hr>
+        </div>
+        <div class="budget">
+          <label for="">Budget</label>
+          <br>
+          <input min="0" max="10" type="number" />
+          <hr>
+        </div>
+        <div class="message">
+          <label for="">Message</label>
+          <br>
+          <textarea rows="" cols=""></textarea>
+          <hr>
+        </div>
         <button type="">Submit</button>
       </form>
       
