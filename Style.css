@@ -14,6 +14,7 @@ body {
     grid-template-columns: 1fr 550px 1fr;
     justify-content: center;
     height: 100vh;
+    background-image: radial-gradient(rgb(218, 45, 218), rgb(164, 164, 255), rgba(253, 65, 96, 0.651));
 }
 
 
@@ -21,10 +22,11 @@ body {
     grid-area: form;
     border: solid 1px black;
     grid-template-columns: auto;
-    /* width: fit-content; */
     padding: 30px;
     margin: 50px 0px;
     background-color: white;
+    border-radius: 20px;
+    border: none;
 }
 
 .header {
@@ -39,6 +41,47 @@ form {
 
 .name, .email, .services, .budget, .message {
     display: grid;
+    gap: 5px;
+}
+
+input{
+    border: none;
+    margin-bottom: 5px;
+}
+
+input:focus{
+    outline: none;
+    /* margin-bottom: 5px; */
+}
+
+select{
+    border: none;
+    background-image: url("sort-arrows-icon.svg");
+    background-size: 6px;
+    background-repeat: no-repeat;
+    background-position: right center; 
+    background-position: calc(100% - 6px) center; 
+    -webkit-appearance: none;
+}
+
+select:focus{
+    outline: none;
+}
+
+textarea{
+    border: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+button{
+    padding: 5px 0;
+    border-radius: 20px;
+    border: none;
+    background-image: linear-gradient(to right, rgb(218, 45, 218), rgb(164, 164, 255), rgba(253, 65, 96, 0.651));
+    color: white;
 }
 
 /* 
