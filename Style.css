@@ -14,7 +14,7 @@ body {
     grid-template-columns: 1fr 550px 1fr;
     justify-content: center;
     height: 100vh;
-    background-image: radial-gradient(rgb(218, 45, 218), rgb(164, 164, 255), rgba(253, 65, 96, 0.651));
+    background-image: linear-gradient(to top right, #59bde0, #ca3df2);
 }
 
 
@@ -32,11 +32,13 @@ body {
 .header {
     text-align: center;
     font-size: 26px;
+    font-weight: bold;
 }
 
 form {
     display: grid;
     gap: 10px;
+    padding: 0 40px;
 }
 
 .name, .email, .services, .budget, .message {
@@ -44,14 +46,27 @@ form {
     gap: 5px;
 }
 
-input{
+input {
     border: none;
     margin-bottom: 5px;
+    font-size: 18px;
 }
 
-input:focus{
+input:focus {
     outline: none;
-    /* margin-bottom: 5px; */
+}
+
+select {
+    font-size: 18px;
+}
+
+textarea {
+    font-size: 18px;
+}
+
+label {
+    font-size: 15px;
+    padding: 20px 0 10px 0;
 }
 
 select {
@@ -65,33 +80,24 @@ select {
     -webkit-appearance: none;
 }
 
-select:focus{
+select:focus {
     outline: none;
 }
 
-textarea{
+textarea {
     border: none;
 }
 
-textarea:focus{
+textarea:focus {
     outline: none;
 }
 
-button{
-    padding: 5px 0;
-    border-radius: 20px;
+button {
+    padding: 20px 0;
+    border-radius: 50px;
     border: none;
-    background-image: linear-gradient(to right, rgb(218, 45, 218), rgb(164, 164, 255), rgba(253, 65, 96, 0.651));
+    background-image: linear-gradient(to right, #e43cf7, #61d5dc);
     color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
-
-/* 
-label text needs to shrink
-placeholder text needs to grow
-gap between labels and inputs
-gap between inputs line breaks
-remove styling from input boxes
-change arrow style on selects
-styling on submit button
-background colour
-*/

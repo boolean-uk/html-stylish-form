@@ -14,7 +14,7 @@ body {
     grid-template-columns: 1fr 550px 1fr;
     justify-content: center;
     height: 100vh;
-    background-image: radial-gradient(rgb(218, 45, 218), rgb(164, 164, 255), rgba(253, 65, 96, 0.651));
+    background-image: linear-gradient(to top right, #59bde0, #ca3df2);
 }
 
 
@@ -32,8 +32,6 @@ body {
 
 .thanks > p {
     font-size: 28px;
-    /* text-align: center;
-    text-justify: center; */
     place-self: center;
 }
 
