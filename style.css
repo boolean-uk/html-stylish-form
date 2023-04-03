@@ -1,3 +1,5 @@
+/* Background colour */
+
 body {
   background: rgb(78, 118, 180);
   background: linear-gradient(
@@ -10,6 +12,7 @@ body {
   font-family: sans-serif;
 }
 
+/* Size of the form  */
 form {
   width: 100%;
   max-width: 500px;
@@ -20,15 +23,18 @@ form {
   border-radius: 10px;
 }
 
+/* Top - needed padding */
 .main-section {
   padding-left: 20px;
 }
 
+/* Hello centered */
 .Say-Hello {
   text-align: center;
   font-size: 17px;
 }
 
+/* All input boxes are hidden i.e no border */
 input {
   border-top-style: hidden;
   border-right-style: hidden;
@@ -38,6 +44,7 @@ input {
   height: 30px;
 }
 
+/* Name */
 .Your-Name {
   color: rgb(94, 93, 93);
 }
@@ -47,6 +54,7 @@ input {
   font-size: 20px;
 }
 
+/* Email */
 .Your-Email {
   color: rgb(94, 93, 93);
 }
@@ -56,6 +64,7 @@ input {
   font-size: 20px;
 }
 
+/* Service */
 .select-option1 {
   color: rgb(94, 93, 93);
 }
@@ -74,6 +83,7 @@ input {
   color: rgb(94, 93, 93);
 }
 
+/* Budget */
 .select-budget-for-services {
   border-top-style: hidden;
   border-right-style: hidden;
@@ -84,6 +94,16 @@ input {
   width: 470px;
 }
 
+/* Arrows */
+.icon-arrow {
+  width: 10px;
+  position: relative;
+  left: 453px;
+  bottom: 27px;
+  color: rgb(94, 93, 93);
+}
+
+/* Message */
 .message {
   color: rgb(94, 93, 93);
 }
@@ -97,4 +117,28 @@ input {
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: hidden;
+}
+
+/* Submit button */
+#submit {
+  background-color: #ccc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 30px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 17px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  height: 50px;
+  position: relative;
+  left: 35px;
+  background: linear-gradient(
+    90deg,
+    rgba(78, 118, 180, 1) 15%,
+    rgba(100, 137, 204, 1) 44%,
+    rgba(140, 130, 201, 1) 58%,
+    rgba(174, 63, 204, 1) 86%
+  );
 }
