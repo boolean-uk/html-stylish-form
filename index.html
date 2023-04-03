@@ -8,49 +8,50 @@
     <title>Stylish Form</title>
   </head>
   <body>
-
     <div class="say-hello">
-      <h2>Say Hello!</h2>
       <form>
-        <label for="Name">Your name</label>
-        <br>
-        <input id="Name" type="text" placeholder="Enter your name">
-        <br>
-
-        <label for="email">Email</label>
-        <br>
-        <input id="email" type="email" placeholder="Enter your emaill adress">
-        <br>
-
-        <label for="services">Needed Services</label>
-        <br>
-        <select name="services" id="services">
-          <option value="" disabled selected hidden>Choose Services</option>
-          <option value="Mec">Mechanic</option>
-          <option value="Plu">Plumber</option>
-          <option value="Art">Aritst</option>
-          <option value="Ven">Vendor</option>
-          <option value="Cyc">Cyclist</option>
-        </select>
-        <br>
-
-        <label for="budget">Budget</label>
-        <br>
-        <select name="budget" id="budget">
-          <option value="" disabled selected hidden>Select Budget</option>
-          <option value="100">100k</option>
-          <option value="200">200k</option>
-          <option value="300">300k</option>
-          <option value="400">400k</option>
-          <option value="500">500k</option>
-        </select>
-        <br>
-
-        <label for="message">Message</label>
-        <br>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message here..."></textarea>
-        <br>
-
+        <div class="header">
+          <h2>Say Hello!</h2>
+        </div>
+        <div class="name">
+          <label for="name">Your name</label>
+          <input id="name" type="text" placeholder="Enter your name">
+        </div>
+        <hr>
+        <div class="email">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your emaill adress">
+        </div> 
+        <hr>
+        <div class="services">
+          <label for="services">Needed Services</label>
+          <select name="services" id="services">
+            <option value="" disabled selected hidden>Choose Services</option>
+            <option value="Mec">Mechanic</option>
+            <option value="Plu">Plumber</option>
+            <option value="Art">Aritst</option>
+            <option value="Ven">Vendor</option>
+            <option value="Cyc">Cyclist</option>
+          </select>
+        </div>
+        <hr>
+        <div class="budget">
+          <label for="budget">Budget</label>
+          <select name="budget" id="budget">
+            <option value="" disabled selected hidden>Select Budget</option>
+            <option value="100">100k</option>
+            <option value="200">200k</option>
+            <option value="300">300k</option>
+            <option value="400">400k</option>
+            <option value="500">500k</option>
+          </select>
+        </div>
+        <hr>
+        <div class="message">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message here..."></textarea>
+        </div>
+        <hr>
         <button>
           Submit &#8594
         </button>
