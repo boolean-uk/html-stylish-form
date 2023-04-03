@@ -11,41 +11,52 @@
     <section class="grid">
       
       <form class="form">
-        <h1>say Hello!</h1>
+        <h1>Say Hello!</h1>
+        <br/>
         <!-- name -->
         <label>Your Name
           <br>
-        <input type="text" placeholder="Enter your name">
+        <input type="text" placeholder="Enter your name" required>
+          
+      </label>
+        <br/>
         <hr/>
-        </label>
-        
+        <br/>
         <!-- email -->
         <label>Email
           <br>
-          <input type="email" placeholder="Enter your email address">
+          <input type="email" placeholder="Enter your email address" required>
+          <br/>
           <hr/>
+          <br/>
         </label>
       
         <!-- needed service - select -->
         <label>Needed Service
           <br>
-          <select name="service">
+          <select name="service" required>
+            <option value="none">Choose Services</option>
             <option value="treeStuff">Gardening</option>
             <option value="dogW">Dog wash</option>
             <option value="brickC">Brick cleaning</option>
           </select>
+          <br/>
           <hr/>
+          <br/>
         </label>
         
         <!-- budget - select -->
         <label>Budget Select
           <br>
-          <select name="Budget">
+          <select name="budget">
+            <option value="none">Select Budget</option>
             <option value="25">£25</option>
             <option value="50">£50</option>
             <option value="100">£100</option>
           </select>
+          <br/>
           <hr/>
+          <br/>
         </label>
        
         <!-- message - textarea-->
@@ -53,9 +64,11 @@
           <br>
           <textarea placeholder="Write your message here" name="message" rows="5" maxlength="200"></textarea>
         </label>
+        <br/>
         <hr/>
+        <br/>
         <!-- namesubmit button -->
-        <input type="submit">
+        <button>Submit2</button>
       </form>
     </section>
   </body>
