@@ -1,0 +1,12 @@
+.grid {
+    display:grid;
+    grid-template-areas: ". form .";
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.form {
+    grid-area: form;
+    background-color: aquamarine;
+    min-height: 400px;
+    border: 1px black solid;
+}
