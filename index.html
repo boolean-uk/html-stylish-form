@@ -14,21 +14,22 @@
         <div class="name">
           <label for="">Your Name</label>
           <br>
-          <input type="text" name="name" value="" placeholder="Enter your name">
+          <input required type="text" name="name" value="" placeholder="Enter your name">
           <hr>
         </div>
         <div class="email">
           <label for="">Email</label>
           <br>
-          <input type="text" name="Email" value="" placeholder="Enter your email address">
+          <input required type="email" name="Email" value="" placeholder="Enter your email address">
           <hr>
         </div>
         <div class="needed-services">
-        <label for="">Needed Services</label>
+          <label for="">Needed Services</label>
           <br>
-          <select name="service">
+          <select required name="service">
+            <option value="">-- Please Choose One --</option>
             <option value="">Car washing</option>
-            <option value="">Lawn Mowing</option>
+            <option value="">Lawn mowing</option>
             <option value="">House painting</option>
           </select>
           <hr>
@@ -36,7 +37,7 @@
         <div class="budget">
           <label for="">Budget</label>
           <br>
-          <input min="0" max="10" type="number" />
+          <input required min="0" type="number" />
           <hr>
         </div>
         <div class="message">
@@ -45,7 +46,7 @@
           <textarea rows="" cols=""></textarea>
           <hr>
         </div>
-        <button type="">Submit</button>
+        <button type="">Submit →</button>
       </form>
       
     </main>

@@ -43,12 +43,54 @@ main > form label {
   color: #a29995;
 }
 
+main > form > .needed-services > select {
+  background: none;
+}
+
+main > form > div > textarea {
+  min-width: 25vw;
+  max-width: 25vw;
+  min-height: 11vh;
+  max-height: 11vh;
+}
+
 main > form > div > input,
 main > form > div > select,
 main > form > div > textarea {
   width: 25vw;
   height: 30px;
   border: none;
+  margin-bottom: 4px;
+  padding-left: 2px;
+}
+
+main > form > .name > input:required:valid,
+main > form > .needed-services > select:required:valid,
+main > form > .budget > input:required:valid,
+main > form > .email > input:required:valid {
+  border: 2px solid green;
+  border-radius: 6px;
+}
+
+main > form > .name > input:required:invalid,
+main > form > .needed-services > select:required:invalid,
+main > form > .budget > input:required:invalid,
+main > form > .email > input:required:invalid {
+  border: 2px solid red;
+  border-radius: 6px;
+}
+
+main > form > button {
+  border: none;
+  background: linear-gradient(90deg, rgb(97, 146, 226) 0%, 11.7188%, rgb(107, 131, 228) 23.4375%, 32.0312%, rgb(100, 141, 226) 40.625%, 47.0052%, rgb(151, 88, 234) 53.3854%, 66.5365%, rgb(169, 75, 238) 79.6875%, 89.8438%, rgb(186, 67, 239) 100%);
+  width: 25vw;
+  height: 5vh;
+  border-radius: 40px;
+  color: white;
+}
+
+main > form > button:hover {
+  cursor: pointer;
 }
 
 
