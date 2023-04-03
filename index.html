@@ -7,7 +7,49 @@
     <link rel="stylesheet" href="style.css" />
     <title>Stylish Form</title>
   </head>
-  <body>
-
+  <body class="grid">
+    <main class="grid">
+      <h1>Say Hello!</h1>
+      <form class="grid" action="./thankyou.html">
+        <div class="name">
+          <label for="">Your Name</label>
+          <span>A</span>
+          <br>
+          <input required type="text" name="name" value="" placeholder="Enter your name">
+          <hr>
+        </div>
+        <div class="email">
+          <label for="">Email</label>
+          <br>
+          <input required type="email" name="Email" value="" placeholder="Enter your email address">
+          <hr>
+        </div>
+        <div class="needed-services">
+          <label for="">Needed Services</label>
+          <br>
+          <select required name="service">
+            <option value="">-- Please Choose One --</option>
+            <option value="">Car washing</option>
+            <option value="">Lawn mowing</option>
+            <option value="">House painting</option>
+          </select>
+          <hr>
+        </div>
+        <div class="budget">
+          <label for="">Budget</label>
+          <br>
+          <input required min="0" type="number" />
+          <hr>
+        </div>
+        <div class="message">
+          <label for="">Message</label>
+          <br>
+          <textarea rows="" cols=""></textarea>
+          <hr>
+        </div>
+        <button type="">Submit →</button>
+      </form>
+      
+    </main>
   </body>
 </html>
