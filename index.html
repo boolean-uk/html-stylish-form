@@ -11,7 +11,7 @@
     <section class="grid">
       
       <form class="form">
-        <h1>Say Hello!</h1>
+        <h1><strong>Say Hello!</strong></h1>
         <br/>
         <!-- name -->
         <label>Your Name
@@ -35,7 +35,7 @@
         <label>Needed Service
           <br>
           <select name="service" required>
-            <option value="none">Choose Services</option>
+            <option value="">Choose Services</option>
             <option value="treeStuff">Gardening</option>
             <option value="dogW">Dog wash</option>
             <option value="brickC">Brick cleaning</option>
@@ -48,8 +48,8 @@
         <!-- budget - select -->
         <label>Budget Select
           <br>
-          <select name="budget">
-            <option value="none">Select Budget</option>
+          <select name="budget" required>
+            <option value="">Select Budget</option>
             <option value="25">£25</option>
             <option value="50">£50</option>
             <option value="100">£100</option>
@@ -62,13 +62,13 @@
         <!-- message - textarea-->
         <label>Message
           <br>
-          <textarea placeholder="Write your message here" name="message" rows="5" maxlength="200"></textarea>
+          <textarea placeholder="Your message here..." name="message" rows="5" maxlength="200"></textarea>
         </label>
         <br/>
         <hr/>
         <br/>
         <!-- namesubmit button -->
-        <button>Submit2</button>
+        <button>Submit</button>
       </form>
     </section>
   </body>
