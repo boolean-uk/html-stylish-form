@@ -1,60 +1,102 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-    background-color: blueviolet;
-    height: 100vh;
-    font-family: sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgb(252, 115, 156) 0%,
+    rgb(139, 102, 241) 100%
+  );
+  height: 100vh;
+  font-family: sans-serif;
 }
 
 .container {
-    width: 400px;
-    height: 600px;
-    border-radius: 10px;
-    background-color: white;
-    padding-top: 10px;
-    display: block;
-    margin: 40px auto;
+  width: 400px;
+  height: 800px;
+  border-radius: 10px;
+  background-color: white;
+  padding-top: 10px;
+  display: block;
+  margin: 40px auto;
 }
 
 h1 {
-    text-align: center;
-    margin-top: 25px;
-    padding-bottom: 20px;
+  text-align: center;
+  margin-top: 25px;
+  padding-bottom: 20px;
 }
 
 hr {
-    margin: 20px 40px 20px 40px ;
-    
+  margin: 20px 40px 20px 40px;
 }
 
-.name {
-    padding: 40px;
+.name,
+.email,
+.services,
+.budget,
+.text {
+  padding: 40px;
+  color: grey;
+  font-size: smaller;
 }
 
-.email {
-    padding: 40px;
+.type-name,
+.type-email {
+  border: none;
 }
 
 input {
-    margin-left: 40px;
-    margin-top: 10px;
+  margin-left: 40px;
+  margin-top: 10px;
 }
 
- .choose-services{
-    margin-left: 40px;
-    margin-top: 10px;
+.choose-services {
+  margin-left: 40px;
+  margin-top: 10px;
 }
 
-.select-budget{
-    margin-left: 40px;
-    margin-top: 10px;
+.select-budget {
+  margin-left: 40px;
+  margin-top: 10px;
 }
 
-.services,.budget {
-    margin-left: 40px;
+textarea {
+  margin-top: 10px;
+  margin-left: 70px;
+}
 
+.button {
+  width: 300px;
+  margin-left: 50px;
+  padding: 10px;
+
+  border-radius: 50px;
+  border: none;
+
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgb(97, 146, 226) 0%,
+    11.7188%,
+    rgb(107, 131, 228) 23.4375%,
+    32.0312%,
+    rgb(100, 141, 226) 40.625%,
+    47.0052%,
+    rgb(151, 88, 234) 53.3854%,
+    66.5365%,
+    rgb(169, 75, 238) 79.6875%,
+    89.8438%,
+    rgb(186, 67, 239) 100%
+  );
+  box-shadow: 2px 2px 2px rgb(160, 160, 160);
+}
+
+.button:hover {
+  transform: ease-in-out 200ms;
+
+  cursor: pointer;
 }
