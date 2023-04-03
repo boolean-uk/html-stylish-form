@@ -9,5 +9,51 @@
   </head>
   <body>
 
+    <div class="container">  
+      <form id="contact" action="./submitted.html" method="post">
+        <h3>Say Hello!</h3>
+        <label for="name">Your Name:</label>
+        <br>
+        <input id="place" placeholder="Enter your name" type="text" tabindex="1" required autofocus>
+        <hr>
+        <br>
+  
+        <label for="email">Email
+        </label>
+        <br>
+        <input placeholder="Enter your email address" type="email" tabindex="2" required>
+    <hr>
+        <br>
+        <label for="services">Needed Services:</label>
+        <br>
+        <select name="services" class="selector-one">
+          <option value="" disabled selected hidden>Choose services</option>
+          <option value="pt">Personal Training</option>
+          <option value="gc">Group Classes</option>
+          <option value="nc">Nutrition Consultation</option>
+        </select>
+        <hr>
+        <br>
+        <label for="services">Budget:</label>
+        <br>
+        <select name="services">
+          <option value="" disabled selected hidden>Select Budget</option>
+          
+          <option value="budget1">Under £100</option>
+          <option value="budget2">£100 - £150</option>
+          <option value="budget3">£150 - 200+ </option>
+        </select>
+        <hr>
+        <br>
+        <label for="email">Message</label>
+        <br> 
+        <textarea placeholder="Your message here..." tabindex="5" required></textarea>
+        <hr>
+        <br>
+        <button name="submit" type="submit" id="contact-submit" data-submit="Sending">Submit → </button>
+      </form>
+    </div>
+
+
   </body>
 </html>
