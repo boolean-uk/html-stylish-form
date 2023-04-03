@@ -62,3 +62,7 @@ textarea{
     border: none;
     font-family: sans-serif;
 }
+
+#thanks {
+    color: red;
+}
