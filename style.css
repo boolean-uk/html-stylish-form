@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: blueviolet;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: white;
+    padding-top: 10px;
+    display: block;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 20px;
+}
+
+hr {
+    margin: 20px 40px 20px 40px ;
+    
+}
+
+.name {
+    padding: 40px;
+}
+
+.email {
+    padding: 40px;
+}
+
+input {
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+ .choose-services{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.select-budget{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.services,.budget {
+    margin-left: 40px;
+
+}
