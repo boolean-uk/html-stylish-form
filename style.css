@@ -78,6 +78,7 @@ main > form > .budget > input:required:invalid,
 main > form > .email > input:required:invalid {
   border: 2px solid red;
   border-radius: 6px;
+  animation: shake 0.2s ease-in-out;
 }
 
 main > form > button {
@@ -91,6 +92,28 @@ main > form > button {
 
 main > form > button:hover {
   cursor: pointer;
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0rem
+  }
+
+  25% {
+    margin-left: 0.5rem;
+  }
+
+  50% {
+    margin-left: 0rem;
+  }
+
+  75% {
+    margin-left: -0.5rem;
+  }
+
+  100% {
+    margin-left: 0rem;
+  }
 }
 
 
