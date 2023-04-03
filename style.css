@@ -1,0 +1,120 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: inherit;
+}
+
+:root {
+   --bottom-space: 11px;
+}
+
+body {
+   box-sizing: border-box;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+   display: grid;
+   height: 100vh;
+   width: 100vw;
+   place-content: center;
+   background: rgb(50, 163, 241);
+   background: linear-gradient(
+      172deg,
+      rgba(50, 163, 241, 1) 0%,
+      rgba(179, 39, 242, 1) 100%
+   );
+}
+
+main {
+   /* height: 92vh; */
+   background-color: rgb(255, 255, 255);
+   border-radius: 11px;
+   padding: 35px 55px;
+
+   display: grid;
+   grid-template-rows: 45px 1fr;
+   grid-template-columns: minmax(350px, 430px);
+   place-items: center;
+}
+
+main h1 {
+   font-size: 45px;
+   color: #1d313a;
+   font-weight: bold;
+}
+
+form {
+   width: 90%;
+   margin-top: 35px;
+}
+
+.input-wrapper {
+   padding-bottom: var(--bottom-space);
+   border-bottom: 2px solid rgb(224, 224, 224);
+   margin-bottom: 29px;
+}
+
+.light-color-label {
+   margin-bottom: 20px;
+}
+
+.light-color-label label {
+   font-weight: 500;
+   color: #8b8b8b;
+   font-size: 16px;
+}
+
+.selected-options {
+   font-weight: bold;
+   font-size: 19px;
+   color: #586469;
+}
+
+.light-color-input input,
+.selected-options {
+   height: 30px;
+}
+
+.light-color-input input,
+.light-color-input textarea,
+.selected-options {
+   border: none;
+   outline: none;
+   width: 100%;
+   resize: none;
+}
+
+.light-color-input input:focus,
+.light-color-input textarea:focus {
+   background-color: #dce8ec;
+   border-bottom: 2px solid tomato;
+}
+
+.light-color-input input::placeholder,
+.light-color-input textarea::placeholder {
+   color: #cfcfcf;
+   font-size: 19px;
+}
+
+.form-button button {
+   width: 100%;
+   border-radius: 50px;
+   border: none;
+   padding: 15px;
+   margin-top: 5px;
+   font-size: 19px;
+   color: white;
+   font-weight: bold;
+
+   background: rgb(201, 130, 233);
+   background: radial-gradient(
+      circle,
+      rgba(201, 130, 233, 1) 0%,
+      rgba(82, 160, 214, 1) 100%
+   );
+}
+
+.form-button button:hover {
+   border-radius: 0;
+}
