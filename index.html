@@ -4,10 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Style.css" />
     <title>Stylish Form</title>
   </head>
   <body>
+    <div class="say-hello">
+      <form action="submit.html" method="PUSH">
+        <div class="header">
+          <h2>Say Hello!</h2>
+        </div>
+        <div class="name">
+          <label for="name">Your name</label>
+          <input name="name" id="name" type="text" placeholder="Enter your name" minlength="3" required>
+        </div>
+        <hr>
+        <div class="email">
+          <label for="email">Email</label>
+          <input name="email" id="email" type="email" placeholder="Enter your email adress" requrired>
+        </div> 
+        <hr>
+        <div class="services">
+          <label for="services">Needed Services</label>
+          <select required name="services" id="services">
+            <option value="" disabled selected hidden>Choose Services</option>
+            <option value="Mec">Mechanic</option>
+            <option value="Plu">Plumber</option>
+            <option value="Art">Artist</option>
+            <option value="Ven">Vendor</option>
+            <option value="Cyc">Cyclist</option>
+          </select>
+        </div>
+        <hr>
+        <div class="budget">
+          <label for="budget">Budget</label>
+          <select required name="budget" id="budget">
+            <option value="" disabled selected hidden>Select Budget</option>
+            <option value="100">100k</option>
+            <option value="200">200k</option>
+            <option value="300">300k</option>
+            <option value="400">400k</option>
+            <option value="500">500k</option>
+          </select>
+        </div>
+        <hr>
+        <div class="message">
+          <label for="message">Message</label>
+          <textarea required minlength="10" name="message" id="message" cols="30" rows="10" placeholder="Your message here..."></textarea>
+        </div>
+        <hr>
+        <button>
+          Submit &#8594
+        </button>
+      </form>
+    </div>
 
   </body>
 </html>
