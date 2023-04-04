@@ -10,10 +10,9 @@
   <body class="grid">
     <main class="grid">
       <h1>Say Hello!</h1>
-      <form class="grid" action="./thankyou.html">
+      <form class="grid" action="./thankyou.html" method="get">
         <div class="name">
           <label for="">Your Name</label>
-          <span>A</span>
           <br>
           <input required type="text" name="name" value="" placeholder="Enter your name">
           <hr>
@@ -29,9 +28,9 @@
           <br>
           <select required name="service">
             <option value="">-- Please Choose One --</option>
-            <option value="">Car washing</option>
-            <option value="">Lawn mowing</option>
-            <option value="">House painting</option>
+            <option value="wash">Car washing</option>
+            <option value="mow">Lawn mowing</option>
+            <option value="paint">House painting</option>
           </select>
           <hr>
         </div>

@@ -72,10 +72,10 @@ main > form > .email > input:required:valid {
   border-radius: 6px;
 }
 
-main > form > .name > input:required:invalid,
-main > form > .needed-services > select:required:invalid,
-main > form > .budget > input:required:invalid,
-main > form > .email > input:required:invalid {
+main > form > .name > input:required:invalid:focus,
+main > form > .needed-services > select:required:invalid:focus,
+main > form > .budget > input:required:invalid:focus,
+main > form > .email > input:required:invalid:focus {
   border: 2px solid red;
   border-radius: 6px;
   animation: shake 0.2s ease-in-out;
