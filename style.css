@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.grid {
+    margin: 5%;
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    background: rgb(78, 118, 180);
+    background: linear-gradient(
+     90deg,
+     rgba(78, 118, 180, 1) 15%,
+     rgba(100, 137, 204, 1) 44%,
+     rgba(140, 130, 201, 1) 58%,
+     rgba(174, 63, 204, 1) 86%
+   );
+   font-family: sans-serif;
+}
+.container {
+    border-radius: 10px;
+    background-color: white;
+    width: 500px;
+    
+}
+form{
+    background-color: white;
+     margin: 30px;
+     border-radius: 20px;
+     width: 350px;
+     padding: 35px;
+     font-size: 20px;
+}
+h1{
+    text-align: center;
+    margin: 10%;
+}
+input{
+    border: none;
+}
+select{
+    border: none;
+}
+hr{
+   width: 110%;
+}
+textarea{
+    border: none;
+}
+button{
+
+}
