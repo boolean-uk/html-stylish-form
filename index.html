@@ -8,6 +8,62 @@
     <title>Stylish Form</title>
   </head>
   <body>
+    <section class="layout">
+      <main class="form">
+        <form action="./thankYou.html" method="POST">
+          <h1>Say Hello!</h1>
+          <label for="name">Your Name</label>
+          <br>
+          <input type="text" id="name" name="name" value="Enter your name">
+          <br>
+          <hr>
+          <label for="email">Email</label>
+          <br>
+          <input type="text" id="email" name="email" value="Enter your email address">
+          <br>
+          <hr>
+          <label for="services">Needed Services</label>
+          <br>
+          <!-- <input id="services" name="services"> -->
+          <h3>Choose Services</h3>
+          <select id="services" name="sevices">
+            <option value="polish">Polish</option>
+            <option value="sleep">Sleep</option>
+            <option value="ascend">Ascend</option>
+          </select>
+          <br>
+          <hr>
+          <label for="budget">Budget</label>
+          <br>
+          <h3>Select budget</h3>
+          <input type="number" id="budget" min="0" max="10" required>
+          <br>
+          <hr>
+          <label for="message">Message</label>
+          <br>
+          <textarea id="message" name="message" col="50" row="5">
+            Your message here...
+          </textarea>
+          <br>
+          <hr>
+          <input type="submit" value="Submit">
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+
+      </main>
+
+
+    </section>
 
   </body>
 </html>
