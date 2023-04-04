@@ -18,22 +18,22 @@
    font-family: sans-serif;
 }
 .container {
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: white;
     width: 500px;
     
 }
 form{
     background-color: white;
-     margin: 30px;
+     margin: 25px;
      border-radius: 20px;
      width: 350px;
-     padding: 35px;
+     padding: 30px;
      font-size: 20px;
 }
 h1{
     text-align: center;
-    margin: 10%;
+    margin: 5%;
 }
 input{
     border: none;
@@ -66,13 +66,13 @@ button{
 }
 @keyframes shake {
     25% {
-        transform: translateX(6px);
+        transform: translateX(4px);
     }
     25% {
-        transform: translateX(-6px);
+        transform: translateX(-4px);
     }
     70% {
-        transform: translateX(6px);
+        transform: translateX(4px);
     }
 }
 select:invalid:focus, input:invalid:focus {
@@ -81,4 +81,5 @@ select:invalid:focus, input:invalid:focus {
 }
 select:valid, input:valid {
     background-color: white
+    animation: shake .4s;
 }
