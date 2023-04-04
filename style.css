@@ -1,0 +1,63 @@
+html {
+    background: linear-gradient(90deg, rgb(97, 146, 226) 0%, 11.7188%, rgb(107, 131, 228) 23.4375%, 32.0312%, rgb(100, 141, 226) 40.625%, 47.0052%, rgb(151, 88, 234) 53.3854%, 66.5365%, rgb(169, 75, 238) 79.6875%, 89.8438%, rgb(186, 67, 239) 100%);
+}
+
+div {
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    background-color: white;
+}
+
+body {
+    display: grid;
+    place-content: center;
+}
+
+button {
+    background: linear-gradient(90deg, rgb(97, 146, 226) 0%, 11.7188%, rgb(107, 131, 228) 23.4375%, 32.0312%, rgb(100, 141, 226) 40.625%, 47.0052%, rgb(151, 88, 234) 53.3854%, 66.5365%, rgb(169, 75, 238) 79.6875%, 89.8438%, rgb(186, 67, 239) 100%);
+    border-radius: 20px;
+    width: 80%;
+    border: none;
+    color: white;
+    padding: 8px;
+    font-size: 1rem;
+    margin-left: 35px;
+}
+
+form {
+    margin: 30px;
+}
+
+input {
+    border-style: hidden;
+}
+
+select {
+    border-style: hidden;
+    outline-style: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1fr;
+}
+
+span {
+    font-size: 0.8rem;
+    color: lightslategray;
+}
+
+.img1 {
+    padding-left: 220px;
+}
+
+.img2 {
+    padding-left: 237px;
+}
+
+textarea {
+    border-style: hidden;
+}
