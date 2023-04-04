@@ -9,5 +9,66 @@
   </head>
   <body>
 
+    <div>
+      <h1> Say Hello!</h1>
+      <form action="submission.html">
+      <label> 
+        <p> Your Name </p>
+        <input
+        id="name"
+        name="name"
+        type="text"
+        placeholder="Enter Your Name Here"
+        required
+        />
+      </label>
+
+      <label>
+        <p>Enter Email</p>
+        <input type="email" 
+        placeholder="Enter Your Email"
+        />
+      </label>
+
+      <label>
+        <p>Which service do you require?</p>
+        <select name="service">
+          <option>Service</option>
+          <option value="CLEAN">Cleaning</option>
+          <option value="COOK">Cooking</option>
+          <option value="GARDEN">Gardening</option>
+        </select>
+      </label>
+
+      <label>
+      <p>Budget</p></label>
+      <input
+      id="budget"
+      name="budget"
+      min="0"
+      max="100000"
+      type="number"
+      placeholder="Enter your budget"
+      required />
+
+      <label>
+        <p>Message</p>
+        <textarea
+          minlength="10"
+          maxlength="2000"
+          name="message"
+          placeholder="Enter your message here"
+        ></textarea>
+      </label>
+
+      <section>
+       <button>
+        Submit
+       </button>
+       </section>
+
+    </form>
+    </div>
+
   </body>
 </html>
