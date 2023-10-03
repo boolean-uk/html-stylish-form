@@ -8,6 +8,51 @@
     <title>Stylish Form</title>
   </head>
   <body>
-
+    <form action="submit.html">
+      <div class="form-container">
+        <h1>Say Hello!</h1>
+        <div class="name-container">
+          <label>Your Name
+            <br>
+            <input type="text" placeholder="Enter your name" name="name" required>
+          </label>
+        </div>
+        <div class="email-container">
+          <label>Email
+            <br>
+            <input type="email" placeholder="Enter your email address" name="email" required>
+          </label>
+        </div>
+        <div class="needed-services-container">
+          <p>Needed Services</p>
+            <select name="needed-service" required>
+              <option value="">Choose Services</option>
+              <option value="service-1">Service 1</option>
+              <option value="service-2">Service 2</option>
+              <option value="service-3">Service 3</option>
+              <option value="service-4">Service 4</option>
+            </select>
+        </div>
+        <div class="budget-container">
+          <p>Budget</p>
+          <select name="budget" required>
+            <option value="">Select Budget</option>
+            <option value="budget-1">Budget 1</option>
+            <option value="budget-2">Budget 2</option>
+            <option value="budget-3">Budget 3</option>
+            <option value="budget-4">Budget 4</option>
+          </select>
+        </div>
+        <div class="message-container">
+          <label>Message
+            <br>
+            <textarea name="message" placeholder="Your message here" cols="30" rows="5" required></textarea>
+          </label>
+        </div>
+        <div class="submit-container">
+          <input class="submit-button" type="submit" value="Submit &#8594;">
+        </div>
+      </div>
+    </form>
   </body>
 </html>
