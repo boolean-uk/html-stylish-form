@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: purple;
+  font-family: sans-serif;
+}
+
+main {
+  background-color: wheat;
+  margin: 10vh 20vw;
+}
