@@ -217,12 +217,13 @@ grid-area: submit-button-con;
     /* border: black 1px dashed; */
     /* display: grid;
     place-content: center; */
+    /* margin-bottom: 5px; */
 
 }
 
 .submit-button {
     width: 90%;
-    height: 80%;
+    height: 70%;
     border-radius: 30px;
     background: rgb(153,33,187);
     background: radial-gradient(circle, rgba(153,33,187,1) 6%, rgba(103,183,233,1) 85%);
