@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to left ,rgb(190, 130, 239) ,rgb(155, 65, 230), rgb(95, 121, 254),rgb(148, 162, 233));
+}
+.main{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 90px 1fr;
+    place-content: center;
+    margin: 3% 32%;
+    min-height: 480px;
+    min-width: 350px;
+    border-radius: 20px;
+}
+h1{
+    display: grid;
+    place-content: center;
+    
+
+}
+form{
+    display: grid;
+    grid-auto-flow: rows;
+
+}
+#username,#email{
+    line-height: 30px;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: rgb(138, 137, 137) 1px solid;
+}
+
+
+#username:valid{
+    border-bottom: rgb(56, 196, 0) 2px solid;
+    
+}
+#email:valid{
+    border-bottom: rgb(36, 196, 0) 2px solid;
+
+}
+
+#username,#email:hover{
+    background-color: rgb(255, 255, 255);
+   
+}
+#budget ,#services{
+    border: none;
+    outline: none;
+    border-bottom: rgb(138, 137, 137) 1px solid;
+    width: 100%;
+    padding: 8px 0;
+
+}
+#message{
+    line-height: 12px;
+    border: none;
+    outline: none;
+    border-bottom: rgb(138, 137, 137) 1px solid;
+    width: 100%;
+    resize: none;
+    
+}
+#message:hover{
+    background-image: linear-gradient(to left bottom ,rgb(237, 233, 240) ,rgb(219, 195, 238), rgb(198, 207, 247),rgb(206, 210, 231));
+    
+    
+}
+form label:nth-child(6){
+    display: grid;
+    place-content: center;
+    padding-bottom: 20px;
+   
+}
+#submit{
+    background-image: linear-gradient(to left ,rgb(190, 130, 239) ,rgb(155, 65, 230), rgb(95, 121, 254),rgb(148, 162, 233));
+    line-height: 30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 15px;
+} 
+#submit:hover{
+    background-image: linear-gradient(to left ,rgb(206, 164, 240) ,rgb(179, 118, 229), rgb(138, 157, 252),rgb(148, 162, 233));
+
+    
+}
+@media only  screen and (max-width:500px) {
+    .main{
+        margin-left: 80px;
+    }
+    
+}
