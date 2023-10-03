@@ -12,7 +12,8 @@ body {
 
 h1 {
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
+    font-size: 30px;
 }
 
 main{
@@ -42,6 +43,10 @@ select, textarea, input {
     border-radius: 25px;
 }
 
+input{
+    height: 50px;
+}
+
 input::placeholder{
     opacity: 0.4;
     padding-top: 10px;
@@ -52,19 +57,28 @@ label {
     color: rgb(53, 53, 53);
 }
 
-hr {
-    opacity: 0.50;
-    margin: 30px 0px;
-}
-
-textarea::placeholder{
-    opacity: 0.4;
-}
-
 select {
     font-size: 1rem;
     position: relative;
     left: -4px;
-    padding-top: 10px;
     font-weight: bold;
+    height: 50px;
 }
+
+hr {
+    opacity: 0.50;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+textarea{
+    margin-top: 10px;
+    height: 100px;
+}
+
+textarea::placeholder{
+    opacity: 0.4;
+    font-size: 15px;
+}
+
+
