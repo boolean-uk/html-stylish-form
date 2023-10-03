@@ -37,10 +37,18 @@ select, textarea, input {
 }
 
 .submit-button {
-    background: linear-gradient(to right, rgba(0, 183, 255, 0.749), rgb(244, 7, 216));
+    background: linear-gradient(to right, rgb(244, 7, 216), rgba(0, 183, 255, 0.749));
     height: 40px;
     color: white;
     border-radius: 25px;
+}
+
+.submit-button:hover {
+    background: linear-gradient(to right, rgba(0, 183, 255, 0.749), rgb(244, 7, 216));
+}
+
+.submit-button:active{
+    box-shadow: 5px 5px 5px black;
 }
 
 input{
@@ -82,3 +90,23 @@ textarea::placeholder{
 }
 
 
+.bottom-p {
+    margin-top: 10px;
+}
+
+.required {
+    color: red;
+    display: none;
+    font-size: 13px;
+}
+
+.required:has(~ .input:invalid){
+    display: unset;
+} 
+
+.required-text {
+    font-size: 13px;
+    color: red;
+    position: relative;
+    top: 10px;
+}

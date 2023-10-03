@@ -12,23 +12,30 @@
 <body>
   <main>
     <section>
+
       <form action="thanks.html" method="POST">
         <h1>Say Hello!</h1>
+
         <div>
+          <p class="required">*</p>
           <label>Your Name</label>
-            <input type="text" placeholder="Enter your name" name="name" required>
+          
+            <input class="input" class="bob" type="text" placeholder="Enter your name" name="name" required>
           <hr>
         </div>
 
         <div>
+          <p class="required">*</p>
           <label>Email</label>
-            <input type="email" placeholder="Enter your email address" name="email" required>
+            <input class="input" type="email" placeholder="Enter your email address" name="email" required/> 
           <hr>
         </div>
+
         <div>
+          <p class="required">*</p>
           <label>Needed Services</label>
-            <select name="services" required>
-              <option selected disabled value="false">Choose Services</option>
+            <select class="input" required name="services" >
+              <option selected disabled value="">Choose Services</option>
               <option value="PC Repair">PC Repair</option>
               <option value="Virus Removal">Virus Removal</option>
               <option value="Build a PC">Build a PC</option>
@@ -36,28 +43,38 @@
             </select>
           <hr>
         </div>
+
         <div>
+          <p class="required">*</p>
+          
           <label>Budget</label>
-            <select name="budget" required>
-              <option selected disabled>Select Budget</option>
-              <option>$50 - $200</option>
-              <option>$200 - $500</option>
-              <option>$500 - $1000</option>
-              <option>$1000 - $5000</option>
-            </select>
-            <hr>
-        </div>
-        <label>Message</label>
-          <textarea name="message" id="#" cols="40" rows="8" placeholder="Your Message Here...">
-          </textarea>
+          <select class="input" required name="budget">
+            <option selected disabled value="">Select Budget</option>
+            <option value="$50 - $200"> $50 - $200</option>
+            <option value="$200 - $500"> $200 - $500</option>
+            <option value="$500 - $1000"> $500 - $1000 </option>
+            <option value="$1000 - $5000"> $1000 - $5000</option>
+          </select>
           <hr>
-        <div>
-          <label>
-            <input class="submit-button" type="submit" name="submit" value="Submit &#10145;">
-          </label>
         </div>
+
+        <label>Message</label>
+          <textarea class="input" required name="message" id="#" cols="40" rows="8" placeholder="Your Message Here...">
+          </textarea>
+          
+          <hr>
+          
+          <div>
+            <label>
+              <input class="submit-button input" type="submit" name="submit" value="Submit &#10145;">
+          </label>
+          <br>
+          <p class="required-text">* Missing content required</p>
+        </div>
+
       </form>
     </section>
+
   </main>
 </body>
 
