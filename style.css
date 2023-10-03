@@ -1,0 +1,82 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, rgb(161, 161, 172), rgb(218, 117, 134));
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+input,
+label {
+  display: block;
+}
+
+input {
+  font-size: 20px;
+  border: none;
+  width: 100%;
+}
+
+input::placeholder {
+  font-size: 12px;
+}
+
+label {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+select {
+  border: none;
+  width: 100%;
+  font-size: 18px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: ". form__page .";
+}
+h1 {
+  display: grid;
+  justify-content: center;
+}
+.form__page {
+  grid-area: form__page;
+  grid-template-rows: 100px 70px 70px 70px 70px 250px 70px;
+  place-content: center;
+  border-radius: 10px;
+  background: white;
+  display: grid;
+}
+
+.thank__you__container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+  resize: none;
+  width: 400px;
+  height: 120px;
+  border: none;
+}
+
+.submit__button {
+  display: grid;
+  justify-content: center;
+}
+
+button {
+  width: 400px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  background: linear-gradient(to right, rgb(197, 101, 117), rgb(189, 189, 214));
+  margin-bottom: 35px;
+}
