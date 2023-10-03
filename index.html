@@ -26,21 +26,43 @@
             <h1>Say Hello!</h1>
           </div>
           <div class="your-name-con">
-            <p>Your Name</p>
+            
             <form>
-              <label>
-                <input type="text" placeholder="Enter your name"> 
+              <label>Your Name
+                <input  type="text" name="name" placeholder="Enter your name" required> 
               </label>
-            </form>
           </div>
-          <div class="email-con"></div>
-          <div class="choose-services-con"></div>
+          <div class="email-con">
+
+            <label class="email-label">Email
+              <input class="email-input" type="text" name="email" placeholder="Enter your email address" required> 
+            </label>
+
+          </div>
+          <div class="choose-services-con">
+            <div class="services-con">
+
+            <label class="services-label">Needed Services
+      <select class="services-select" name="services-needed" id="">
+        <option value="Choose-Services">Choose Services</option>
+        <option value="Cleaner">Cleaner</option>
+        <option value="Painter">Painter</option>
+        <option value="Carpenter">Carpenter</option>
+        <option value="
+        Electrician">
+        Electrician</option>
+        <option value="Gardener">Gardener</option>
+      </select>
+    </label>
+  </div>
+          </div>
           <div class="budget-con"></div>
           <div class="message-con"></div>
           <div class="submit-button-con"></div>
         </div>
 
       </div>
+    </form>
       <div class="right"></div>
 
     </div>

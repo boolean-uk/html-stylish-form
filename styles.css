@@ -48,12 +48,13 @@ background: radial-gradient(circle, rgba(153,33,187,1) 6%, rgba(103,183,233,1) 8
     padding: 5px;
     gap: 5px;
     background-color: white;
+    border-radius: 20px;
 
 }
 
 .say-hello-con {
     grid-area:say-hello-con ;
-    border: black 1px dashed;
+    /* border: black 1px dashed; */
     display: grid;
     place-items: center;
 
@@ -62,36 +63,89 @@ background: radial-gradient(circle, rgba(153,33,187,1) 6%, rgba(103,183,233,1) 8
 .say-hello-con > h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 37px;
-    color: rgba(0, 0, 0, 0.675);
+    color: rgba(0, 0, 0, 0.79);
 }
 
+/* NAME */
 .your-name-con{
 grid-area:your-name-con ;
-border: black 1px dashed;
+/* border: black 1px dashed;
+ */
+ border-bottom: silver 1px solid;
 }
 
-.your-name-con > p {
-    font-family: 'Roboto', sans-serif;
-    color: rgba(17, 1, 1, 0.927);
-    margin-left: 50px;
-}
 
 .your-name-con > form {
     margin-left: 50px;
 }
 
+label, input {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border: none
+}
 
+label > input {
+    margin-top: 15px;
+    width: 90%;
+}
+
+label {
+    margin-top: 20px;
+    
+}
+
+/* EMAIL */
 .email-con{
     grid-area: email-con;
-    border: black 1px dashed;
+    /* border: black 1px dashed;
+     */
+     border-bottom: silver 1px solid;
+     
+     
+    
+}
+
+.email-label {
+    margin-left: 50px;
+}
+
+
+/* SERVICES */
+
+.choose-services-con {
+    grid-area: choose-services-con;
+        /* border: black 1px dashed; */
+        border-bottom: silver 1px solid;
+
+    }
+
+.services.con {
+    display: block;
+    
+   
+}
+    
+.services-label {
+    margin-left: 50px;
+    color: grey;
+}
+
+.services-select{
+    margin-top: 10px;
+    /* display: block; */
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border: none;
+    color: black;
     
 }
 
 
-.choose-services-con {
-grid-area: choose-services-con;
-    border: black 1px dashed;
-}
+
+
 
 .budget-con {
 grid-area:budget-con  ;
