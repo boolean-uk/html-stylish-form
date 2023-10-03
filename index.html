@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Stylish Form</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Stylish Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form action="confirmation.html" class="form">
+      <h2 class="form__title">Say Hello!</h2>
+      <label class="form__item">
+        <span class="form__item-title">Your Name</span>
+        <input type="text" name="name" class="form__item-input" placeholder="Enter your name" min="3" required>
+      </label>
+      <label class="form__item">
+        <span class="form__item-title">Email</span>
+        <input type="email" name="email" class="form__item-input" placeholder="Enter your email address" required>
+      </label>
+      <label class="form__item">
+        <span class="form__item-title">Needed Services</span>
+        <select name="services" class="form__item-selector" required>
+          <option value="" class="form__item-option">Choose Services</option>
+          <option value="service1" class="form__item-option">Service1</option>
+          <option value="service2" class="form__item-option">Service2</option>
+          <option value="service3" class="form__item-option">Service3</option>
+        </select>
+      </label>
+      <label class="form__item">
+        <span class="form__item-title">Budget</span>
+        <select name="budget" class="form__item-selector" required>
+          <option value="" class="form__item-option">Select Budget</option>
+          <option value="budget1" class="form__item-option">Budget1</option>
+          <option value="budget2" class="form__item-option">Budget2</option>
+          <option value="budget3" class="form__item-option">Budget3</option>
+        </select>
+      </label>
+      <label class="form__item">
+        <span class="form__item-title">Message</span>
+        <textarea name="message" cols="30" rows="5" minlength="10" maxlength="300" class="form__item-message"
+          placeholder="Your message here..." required></textarea>
+      </label>
+      <input type="submit" value="Submit →" class="form__button">
+    </form>
+  </div>
+</body>
+
 </html>
