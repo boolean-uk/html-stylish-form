@@ -15,7 +15,7 @@
         <form method="GET" action="submit.html">
           <div class="inputContainer">
             <label for="name">Your Name</label>
-              <input id="name" type="text" name="username" placeholder="Enter your name" required>
+              <input id="name" type="text" name="username" placeholder="Enter your name" minlength="2" required>
           </div>
 
           <hr/>
@@ -30,7 +30,7 @@
           <div class="inputContainer">
             <label>Selected Services</label>
               <select name="services" required>
-                <option value="">Choose a Service</option>
+                <option value="" selected disabled>Choose a Service</option>
                 <option value="ECO">Economy</option>
                 <option value="PECO">Premium Economy</option>
                 <option value="BUS">Business</option>
@@ -43,7 +43,7 @@
           <div class="inputContainer">
             <label>Budget</label>
               <select name="budget" required>
-                <option value="">Choose a Budget</option>
+                <option value="" selected disabled>Choose a Budget</option>
                 <option value="LOW">£0 - £499</option>
                 <option value="BUD">£500 - £999</option>
                 <option value="MID">£1000 - £2499</option>
@@ -62,7 +62,7 @@
           <hr/>
 
           <div class="inputContainer submit">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit &#10145;">
           </div>
         </form>
       </section>
