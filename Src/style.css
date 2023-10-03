@@ -3,11 +3,13 @@ body {
     /*background-image: url("https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");*/
     background-color: rgb(49,176,147);
     background-image:linear-gradient(rgba(173, 130, 188, 0.625), rgba(59, 109, 66, 0.474));
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    margin: 25px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25em
 }
 .form-container {
     background-color:rgba(251, 248, 248, 0.252);
@@ -18,7 +20,15 @@ body {
     text-align: center;
     font-family: 'Crimson Pro', serif;
 }
-
+.thanks {
+    text-align: center;
+    text-size-adjust: 50px;
+    font-family: 'Crimson Pro', serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    padding-top:400px;
+}
 .form-container h2 {
     margin-bottom: 20px;
 }
