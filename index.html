@@ -8,6 +8,54 @@
     <title>Stylish Form</title>
   </head>
   <body>
-
+    <main>
+      <div class="form">
+        <h1 class="title">Say Hello!</h1>
+        <form method="GET" action="submitinfo.html"></form>
+          <div class="input-section">
+          <form method="get" action="submit-button.html"></form>
+          <label for="name">Your Name</label>
+          <input id="name" type="text" name="username" placeholder="Enter your name" min="2" required>
+        </div>
+      <hr>
+        <div class="input-section">
+          <label for="email">Email</label>
+          <input type="email" type="email" placeholder="Enter your email address here" required>
+        </div>
+      <hr>
+        <div class="input-section">
+          <label for="services">Selected Services</label>
+            <select name="services" required>
+              <option value="selector">Select your service.</option>
+              <option value="1">A Jason Statham Smile</option>
+              <option value="2">A Vinod joke</option>
+              <option value="3">A Jason Statham hug</option>
+              <option value="4">A Vinod hug</option>
+              <option value="5">All of the above</option>
+            </select>
+        </div>
+      <hr>
+        <div class="input-section">
+          <label for="budget">Budget</label>
+          <select name="budget" id="budget">
+            <option value="selector">Choose your budget.</option>
+            <option value="0">I have no money</option>
+            <option value="1-2">I want money but don't have any</option>
+            <option value="2-5">I have a little money</option>
+            <option value="5-8">I have a good amount of money</option>
+            <option value="8-10">I bathe in money.</option>
+          </select>
+        </div>
+      <hr>
+        <div class="input-section">
+          <label for="message">Your Message</label>
+          <textarea name="message" placeholder="Your Message Here..." rows="5" maxlength="100"></textarea>
+        </div>
+        <hr>
+        <div class="submit-button">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+    </main>
   </body>
 </html>
