@@ -5,37 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style.css">
     <title>Stylish Form[Is it?]</title>
   </head>
   <body>
+    <main>
     <h1>Say Hello</h1>
-
     <form method="POST" action="thatpage.html" >
-      <label>Your name</label>
-       <input type="text" placeholder="Type your name here" required>
-
-      <label>Email</label>
-       <input type="email" placeholder="Example@gmail.com" required>
+      <label>Your name
+        <input type="text" placeholder="Type your name here" required>
+      </label>
+      <label>Email
+        <input type="email" placeholder="Example@gmail.com" required>
+      </label>
     <div class="Services">
-      <label>Needed Services</label>
-      <select name="Services" id="">
-        <option value="">choose services</option>
-        <option value="">Bear Hug Delivery Services</option>
-        <option value="">Bear-ista Coffee Shop</option>
-        <option value="">Bear-ly Good Trainer</option>
-        <option value="">Cy-Bear security</option>
-      </select>
+      <label>Needed Services
+        <select class="dropdown" name="Services" id="">
+          <option value="">choose services</option>
+          <option value="">Bear Hug Delivery Services</option>
+          <option value="">Bear-ista Coffee Shop</option>
+          <option value="">Bear-ly Good Trainer</option>
+          <option value="">Cy-Bear security</option>
+        </select>
+      </label>
     </div>
     <div class="Services">
-      <label>Budget</label>
-      <select name="Services" id="">
-        <option value="">choose services</option>
-        <option value="">Fuzzy Feelings and Hug Expenses</option>
-        <option value="">Bear-ista Coffee Connoisseur Budget</option>
-        <option value="">Pawsitive Health and Growls Budget</option>
-        <option value="">Bear-ly Secure Tech fund</option>
-      </select>
+      <label>Budget
+        <select class="dropdown" name="Services" id="">
+          <option value="">Choose services</option>
+          <option value="">Fuzzy Feelings and Hug Expenses</option>
+          <option value="">Bear-ista Coffee Connoisseur Budget</option>
+          <option value="">Pawsitive Health and Growls Budget</option>
+          <option value="">Bear-ly Secure Tech fund</option>
+        </select>
+      </label>
     </div>
      <div class="message">
         <label>Message
@@ -46,7 +48,7 @@
            submit →
        </button>
      </div>
-   
-   
+   </form>
+  </main>
   </body>
 </html>

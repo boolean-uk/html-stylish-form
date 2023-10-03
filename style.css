@@ -1,0 +1,50 @@
+
+/*main layout*/
+
+body {
+    background: linear-gradient(45deg, rgb(96, 203, 230), rgb(179, 69, 216));
+    height: 100vh;
+    font-family: "Arial", sans-serif;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 39.5px;
+    margin: 40px 20%;
+    min-width:  200px;
+    height: 70%;
+    overflow: auto; 
+    text-align: center;
+}
+
+/*form*/
+
+label {
+    display: grid;
+    text-align:start;
+    padding: 10px  0;
+    border-bottom: 2px solid rgb(219, 219, 219);
+}
+
+input,
+textarea,
+select, 
+button {
+    border: none;
+}
+
+input, 
+select, 
+button {
+    height: 35px;
+}
+
+.dropdown {
+    margin-right: 5px;
+    appearance: none;
+    background-image: url("./assets/up-and-down-small-triangular-arrows-svgrepo-com.svg");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
