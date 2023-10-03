@@ -12,29 +12,86 @@
       <h1>Say Hello!</h1>
       <form action="">
         <div class="form-item">
-          <label class="item-title">Your Name
-            <input type="text" name="name"/>
-          </label>
+          <label for="name" class="item-title">Your Name</label>
+          <input
+            required
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+          <img
+            class="valid"
+            src="https://img.icons8.com/00ff00/ok"
+            alt="tick"
+          />
         </div>
+        <hr />
         <div class="form-item">
-          <label class="item-title">Email
-            <input type="email" name="email"/>
-          </label>
+          <label for="email" class="item-title">Email</label>
+          <input
+            required
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+          <img
+            class="valid"
+            src="https://img.icons8.com/00ff00/ok"
+            alt="tick"
+          />
         </div>
+        <hr />
         <div class="form-item">
-          <label class="item-title">Needed Services
-            <select name="services"></select>
-          </label>
+          <label for="services" class="item-title">Needed Services</label>
+          <select required id="services" name="services">
+            <option value="" selected disabled>Choose Services</option>
+            <option value="plumber">Plumber</option>
+            <option value="electrician">Electrician</option>
+            <option value="gardner">Gardner</option>
+          </select>
+          <img
+            class="valid"
+            src="https://img.icons8.com/00ff00/ok"
+            alt="tick"
+          />
         </div>
+        <hr />
         <div class="form-item">
-          <label class="item-title">Budget
-            <select name="budget"></select>
-          </label>
+          <label for="budget" id="budget" class="item-title">Budget</label>
+          <select required name="budget">
+            <option value="" selected disabled>Select Budget</option>
+            <option value="0-100">$0-100</option>
+            <option value="101-250">$101-250</option>
+            <option value="251-1000">$251-1000</option>
+            <option value="1000+">$1000+</option>
+          </select>
+          <img
+          class="valid"
+          src="https://img.icons8.com/00ff00/ok"
+          alt="tick"
+        />
         </div>
-        <div class="form-item">Message
-          <label class="item-title">
-            <textarea name="message" cols="30" rows="10"></textarea>
-          </label>
+        <hr />
+        <div class="form-item">
+          <label for="message" class="item-title">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <img
+          class="valid"
+          src="https://img.icons8.com/00ff00/ok"
+          alt="tick"
+        />
+        </div>
+        <hr />
+        <div class="form-item">
+          <button type="submit">Submit →</button>
         </div>
       </form>
     </main>
