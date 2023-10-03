@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+}
+.sayhello {
+    margin: 0 30%;
+    background-color: white;
+    height:650px;
+    grid-auto-flow: rows;
+}
+body {
+    background: linear-gradient(to right, gold,black)
+}
+input:valid {
+    background-color: rgb(0, 113, 128);
+}
+input:invalid {
+    background-color: greenyellow;
+    color: white;
+}
