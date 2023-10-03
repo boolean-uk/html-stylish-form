@@ -9,11 +9,10 @@ form {
   background-color: white;
   border-radius: 20px;
   padding: 40px;
-  margin: auto;
+  margin: 5vh auto;
   width: 30%;
   min-width: 400px;
   max-width: 600px;
-  
 }
 
 h1 {
@@ -49,6 +48,7 @@ input, select, textarea {
 textarea {
   padding: 5px 0;
   font-family: unset;
+  height: 100px;
 }
 
 #budget {
