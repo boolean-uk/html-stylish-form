@@ -5,7 +5,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-form {
+.container {
   background-color: white;
   border-radius: 20px;
   padding: 40px;
@@ -15,10 +15,22 @@ form {
   max-width: 600px;
 }
 
+.container {
+  animation: 3s slidein;
+}
+
 h1 {
   font-weight: 900;
   margin: 0;
   text-align: center;
+}
+
+input:invalid {
+  background-image: linear-gradient(180deg, rgba(255, 0, 136, 0.025) 0%, rgba(255, 0, 136, 0.1));
+}
+
+input:placeholder-shown {
+  background-image: none;
 }
 
 .formSection {
@@ -36,6 +48,7 @@ input, select, textarea {
   margin: 5px 0 10px 0;
   padding: 0 0 5px 0;
   border: none;
+  border-radius: 5px;
   width: 100%;
   height: 3em;
   border-bottom: 2px rgb(213, 213, 213) solid;
