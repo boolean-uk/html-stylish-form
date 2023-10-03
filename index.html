@@ -33,6 +33,7 @@
               </label>
           </div>
           <div class="email-con">
+            
 
             <label class="email-label">Email
               <input class="email-input" type="text" name="email" placeholder="Enter your email address" required> 
@@ -56,10 +57,33 @@
     </label>
   </div>
           </div>
-          <div class="budget-con"></div>
-          <div class="message-con"></div>
-          <div class="submit-button-con"></div>
+          <div class="budget-con">
+            <div class="budget-con-wrap">
+
+              <label class="budget-label">Budget
+                <select class="budget-select" name="budget-select" id="">
+                  
+                  <option value="Select-Budget">Select Budget</option>
+                  <option value="100-300">£100-£300</option>
+                  <option value="400-700">£400-£700</option>
+                  <option value=">1000">£1000 +</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="message-con">
+            <div class="message-con-wrap">
+
+              <label class="message-label">Message
+                <textarea class="message-text-area" name="" id="" cols="40" rows="9">Your Message Here...</textarea>
+              </label>
+            </div>
+          </div>
+          <div class="submit-button-con">
+            <button class="submit-button" type="submit">Submit <span>&#8594;</span></button>
+          </div>
         </div>
+
 
       </div>
     </form>

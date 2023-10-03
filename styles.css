@@ -14,12 +14,12 @@ background: radial-gradient(circle, rgba(153,33,187,1) 6%, rgba(103,183,233,1) 8
 
 .left {
     grid-area: left;
-    border: black 1px dashed;
+    /* border: black 1px dashed; */
 }
 
 .middle {
     grid-area: middle;
-    border: black 1px dashed;
+    /* border: black 1px dashed; */
 
     display: grid;
     grid-template: "middle-con";
@@ -32,7 +32,7 @@ background: radial-gradient(circle, rgba(153,33,187,1) 6%, rgba(103,183,233,1) 8
 
 .middle-con {
     grid-area: middle-con;
-    border: black 1px dashed;
+    /* border: black 1px dashed; */
 
     display: grid;
     grid-template: 
@@ -71,7 +71,7 @@ background: radial-gradient(circle, rgba(153,33,187,1) 6%, rgba(103,183,233,1) 8
 grid-area:your-name-con ;
 /* border: black 1px dashed;
  */
- border-bottom: silver 1px solid;
+ border-bottom: silver 2px solid;
 }
 
 
@@ -101,7 +101,7 @@ label {
     grid-area: email-con;
     /* border: black 1px dashed;
      */
-     border-bottom: silver 1px solid;
+     border-bottom: silver 2px solid;
      
      
     
@@ -117,7 +117,7 @@ label {
 .choose-services-con {
     grid-area: choose-services-con;
         /* border: black 1px dashed; */
-        border-bottom: silver 1px solid;
+        border-bottom: silver 2px solid;
 
     }
 
@@ -145,24 +145,99 @@ label {
 
 
 
-
+/* BUDGET */
 
 .budget-con {
 grid-area:budget-con  ;
-    border: black 1px dashed;
+    /* border: black 1px dashed;
+     */
+     border-bottom: silver 2px solid;
+     
 }
+
+
+.budget-con-wrap {
+    display: block;
+}
+
+.budget-label {
+    margin-left: 50px;
+    color: grey;
+}
+
+.budget-select{
+    margin-top: 10px;
+    /* display: block; */
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border: none;
+    color: black;
+    
+}
+
+
+/* MESSAGE */
 
 .message-con {
 grid-area: message-con;
-    border: black 1px dashed;
+    /* border: black 1px dashed; */
+    border-bottom: silver 2px solid;
 }
 
+
+.message-con-wrap {
+    display: block;
+}
+
+.message-label {
+    margin-left: 50px;
+    color: grey;
+}
+
+.message-text-area {
+    /* border: none; */
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: grey;
+    border: none;
+    /* position: fixed; */
+   
+    
+    
+    
+}
+
+/* SUBMIT */
 .submit-button-con {
 grid-area: submit-button-con;
-    border: black 1px dashed;
+    /* border: black 1px dashed; */
+    /* display: grid;
+    place-content: center; */
+
+}
+
+.submit-button {
+    width: 90%;
+    height: 80%;
+    border-radius: 30px;
+    background: rgb(153,33,187);
+    background: radial-gradient(circle, rgba(153,33,187,1) 6%, rgba(103,183,233,1) 85%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border: none;
+    margin-left: 20px;
+    margin-top: 8px;
+    
+}
+
+.submit-button-con > button > span {
+    color: white;
+    
 }
 
 .right {
     grid-area: right;
-    border: black 1px dashed;
+    /* border: black 1px dashed; */
 }
