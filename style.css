@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  min-height: 100vh;
+}
+
 body {
   background-color: purple;
   font-family: sans-serif;
@@ -13,9 +17,11 @@ body {
 
 main {
   background-color: white;
-  margin: 10vh 20vw;
+  margin: 10vh 30vw;
 
   padding: 32px;
+
+  border-radius: 1ch;
 }
 
 h1 {
@@ -81,7 +87,13 @@ button[type="submit"] {
 
   background: linear-gradient(90deg, #e4f, #6dd);
 
+
+  margin-top: 24px;
   height: 40px;
   width: 100%;
   border-radius: 40ch;
+}
+
+button {
+  cursor: pointer;
 }
