@@ -244,3 +244,7 @@ grid-area: submit-button-con;
     grid-area: right;
     /* border: black 1px dashed; */
 }
+
+input:invalid {
+    background-color: rgb(247, 218, 223);
+}
