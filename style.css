@@ -76,7 +76,7 @@ textarea {
 }
 
 button {
-  background: linear-gradient(-90deg, rgb(89,191,222) 0%, rgb(204,61,244) 100%);
+  background-color: rgb(89,191,222);
   padding: 12px;
   font-size:larger;
   letter-spacing: 0.05em;
@@ -84,4 +84,19 @@ button {
   border-radius: 40px;
   width: 100%;
   border: none;
+}
+
+@keyframes colorfade {
+  from {background-color: rgb(89,191,222)}
+  25% {background-color: rgb(204,61,244)}
+  50% {background-color: rgb(244, 61, 159)}
+  75% {background-color: rgb(204,61,244)}
+  to {background-color: rgb(89,191,222)}
+}
+
+button:hover {
+  animation-name: colorfade;
+  animation-duration: 5s;
+  animation-delay: 0.3s;
+  animation-iteration-count: 1;
 }
