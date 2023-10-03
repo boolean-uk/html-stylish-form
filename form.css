@@ -47,6 +47,11 @@ input, select, textarea {
   }
 
 
+  input, textarea {
+    font-family: 'Raleway', sans-serif;
+  }
+
+
   hr {
     margin-left: 50px;
     margin-right: 40px;
