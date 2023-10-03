@@ -86,7 +86,7 @@ input:invalid + span::before, select:invalid + span::before {
 
 input:valid + span::before, select:valid + span::before {
     content: "✔";
-    color: green;
+    color: rgba(91, 122, 246, 0.989);
     font-size: 15px;
 }
 
