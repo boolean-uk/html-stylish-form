@@ -45,12 +45,11 @@ h1 {
 }
 .form__page {
   grid-area: form__page;
-  grid-template-rows: 100px 70px 70px 70px 70px 150px 60px;
+  grid-template-rows: 100px 70px 70px 70px 70px 250px 70px;
   place-content: center;
   border-radius: 10px;
   background: white;
   display: grid;
-  height: 80vh;
 }
 
 .thank__you__container {
@@ -64,7 +63,7 @@ h1 {
 textarea {
   resize: none;
   width: 400px;
-  height: 80px;
+  height: 120px;
   border: none;
 }
 
@@ -79,4 +78,5 @@ button {
   border-radius: 50px;
   color: white;
   background: linear-gradient(to right, rgb(197, 101, 117), rgb(189, 189, 214));
+  margin-bottom: 35px;
 }
