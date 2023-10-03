@@ -60,6 +60,7 @@ input, select, textarea {
 
   button{
     color: white;
+    cursor: pointer;
     font-size: 15px;
     padding: 20px 200px;
     margin-left: 60px;
