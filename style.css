@@ -56,6 +56,7 @@ input, select, textarea{
     margin-bottom: 1rem;
     padding: 1rem 0;
     outline: none;
+    opacity: .8;
 }
 
 input + span, select + span{
