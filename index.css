@@ -1,0 +1,68 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif,Arial;
+   background: linear-gradient(315deg, rgba(226,80,205,1) 9%, rgba(97,92,227,1)56%, rgba(0,212,255,1) 90%);
+ /*
+background: linear-gradient(214deg, rgba(226,80,205,1) 9%, rgba(97,92,227,1) 56%, rgba(0,212,255,1) 86%);*/
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+}
+.container{
+  /*  width: 400px;
+    background-color: white;
+    color: black;
+    text-align: center;*/
+    display: grid;
+    grid-template-rows: 90px 1fr;
+    background-color: white;
+    width: 500px;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+.heading-1{
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bolder;
+}
+
+/*  form div */
+.fields{
+    display: grid;
+    grid-template-columns: minmax(100px,150px) , minmax(200px,350px);
+    gap: 10px;
+   padding: 5px 0px;
+   margin: 10px 55px;
+   }
+.fields > input , select , textarea{
+  padding: 8px 2px;
+  border:none;
+  border: none;
+  border-bottom: 1px solid grey;
+  outline: none;
+}
+.fields > .submit{
+  border-radius: 20px;
+  margin: 0 10px 10px 10px;
+  background: linear-gradient(315deg, rgba(226,80,205,1) 9%, rgba(97,92,227,1)56%, rgba(0,212,255,1) 90%);
+  color: white;
+  font-size: 20px;
+}
+#email:invalid {
+  background-color: rgb(227, 224, 224);
+ 
+}
+input:invalid{
+  background-color: rgb(227, 224, 224);
+  border-bottom: 1px solid red;
+}
+input:valid{
+  border-bottom: 1px solid green;
+}

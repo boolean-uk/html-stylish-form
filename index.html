@@ -4,10 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>Stylish Form</title>
+    
   </head>
   <body>
+   
+     <div class="container">
+      <!--  header  -->
+      <header>
+        <h1 class="heading-1">Say Hello!</h1>
+      </header>
 
+      <!--- Form startes -->
+
+      <form  action="confirmation.html" >
+
+        <div class="fields">
+          <label for="name">Your Name </label>
+            <input type="text" name="your name" placeholder="Please enter name" required>
+         
+        </div>
+
+        <div class="fields">
+          <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Please enter email" required>
+          
+        </div>
+
+        <div class="fields">
+          <label for="services">Needed services </label>
+            <select name="services" id="services">
+              <option value="services" selected> Choose Services</option>
+              <option value="broadband">Broadband</option>
+              <option value="electric">Electricity</option>
+              <option value="gas">Gas</option>
+            </select>
+          </div>
+            <div class="fields">
+              <label for="budget">Select Budget </label>
+                <select name="budget" id="budget">
+                  <option value="budget" selected>Select Budget</option>
+                  <option value="$0-20">$0-20</option>
+                  <option value="$20-50">$20-50</option>
+                  <option value="$50-100">$50-100</option>
+                  <option value="$more">$more</option>
+                </select>
+            </div>
+
+            <div class="fields">
+             <label for="msg">Message</label>
+             <textarea name="msg" id="" cols="10" rows="5" style="resize: none;" placeholder="Your Message here"></textarea>
+            </div>
+
+            <div class="fields ">
+             <input type="submit"  class="submit" value="Submit &#8594;">
+            <!--  <button>Submit <img src="./images/arrow-right-svgrepo-com.svg" alt=""></button>--> 
+            </div>
+      </form>
+     </div>
   </body>
 </html>
