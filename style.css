@@ -93,3 +93,7 @@ button:hover:before{
     border-radius: 25px;
     box-shadow: 0px 0px 10px 7px white;
 } 
+
+ input:invalid{
+    background-color: red;
+}
