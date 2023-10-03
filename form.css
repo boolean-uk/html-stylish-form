@@ -84,8 +84,30 @@ input, select, textarea {
     padding-left: 10px;
   }
 
+  input + span {
+    position: relative;
+  }
+  
+  input + span::before {
+    position: absolute;
+    left: 480px;
+    top: -30px;
+  }
+  
+  
+  input:invalid + span::before {
+    content: "✖";
+    color: red;
+  }
+  
+  input:valid + span::before {
+    content: "✓";
+    color: green;
+  }
+
   input:valid {
    background-color: rgb(171, 239, 171);
    border-radius: 10px;
    padding-left: 10px;
   }
+
