@@ -8,6 +8,53 @@
     <title>Stylish Form</title>
   </head>
   <body>
-
+    <form class="sayhello"><h2>Say Hello</h2>
+      <div class="inputContainer">
+        <p>Your name</p>
+        <label>
+          <input type="text" placeholder="Enter your name" required>
+        </label>
+      </div>
+      <div class="inputContainer1">
+        <p>Email</p>
+        <label>
+          <input type="email" placeholder="Enter your email address" required>
+        </label>
+      </div>
+      <div class="inputContainer2">
+        <p>Needed services</p>
+        <select name="services">
+          <option value=" ">Choose services</option>
+          <option value="del">Delivery</option>
+          <option value="Mat">Maternity</option>
+          <option value="cae">Caeserean</option>
+          <option value="Pre">Pregnancy</option>
+          <option value="Uri">Urinary</option>
+        </select>
+      </div>
+      <div class="inputContainer3">
+        <p>Budget</p>
+        <select name="budget">
+          <option value=" ">Select budget</option>
+          <option value=" ">0-100k</option>
+          <option value="200">100k-200k</option>
+          <option value="300">200k-300k</option>
+          <option value="400">300k-400k</option>
+          <option value="500">400k-500k</option>
+          <option value="600">500k-600k</option>
+          <option value="700">600k-700k</option>
+          <option value="800">700k-800k</option>
+          <option value="900">800k-900k</option>
+          <option value="1m">900k-1,000,000</option>
+        </select>
+      </div>
+      <div class="inputContainer4">
+        <p>Message</p>
+        <label>
+          <textarea name="Message" cols="100" rows="10" placeholder="Your Message here"></textarea>
+        </label>
+      </div>
+      <input type="submit" value="Submit ">
+    </form>
   </body>
 </html>
