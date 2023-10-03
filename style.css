@@ -56,6 +56,10 @@ button{
     border-radius: 35px;
     width: 100%;
     margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     
 }
 textarea{
@@ -70,15 +74,22 @@ button:hover {
     transition-duration: 0.2s;
     font-size: 20px;
     font-weight: bold;
+    padding: 5px 0;
 }
 
-button:hover::after,
-button:hover::before {
+button:hover:after,
+button:hover:before{
     display: inline-block;
-    content: url("https://img.freepik.com/premium-vector/hand-drawn-grizzly-bear-sitting-pose_9645-2569.jpg?w=740");
-    transform: scale(0.2, 0.2);
+    background-image: url("https://img.freepik.com/premium-vector/hand-drawn-grizzly-bear-sitting-pose_9645-2569.jpg?w=740");
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: " ";
+    width: 25px;
+    /* transform: scale(0.2, 0.2); */
     padding: 0;
     margin: 0; 
-    width:fit-content;
-    height: fit-content;
+    /* width:fit-content; */
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 7px white;
 } 
