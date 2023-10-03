@@ -15,13 +15,13 @@
 
   <h1 class="title"> Say Hello!</h1>
 
-  <form>
+  <form method="post" action="submit.html">
 
     <div class="item">
     <label class="name">Your Name
       <br>
       <br>
-      <input type="text" placeholder="Enter your name" required>
+      <input type="text" placeholder="Enter your name" required min="0" >
     </label>
    </div>
 
@@ -46,6 +46,9 @@
   <option>Plumber</option>
   <option>Groundsmen</option>
   <option>Electritian</option>
+  <option>Gardener</option>
+  <option>Joiner</option>
+  <option>Window fitter</option>
 </select>
 </label>
 </div>
@@ -70,7 +73,7 @@
 <div class="item">
   <label class="message">Message
     <br>
-  <textarea name="message" placeholder="Enter your message here" cols="30" rows="5" maxlength="200"></textarea>
+  <textarea name="message" placeholder="Enter your message here..." cols="30" rows="5" maxlength="200"></textarea>
 </label>
 </div>
 
