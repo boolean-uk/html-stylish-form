@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Stylish Form</title>
   </head>
-  <body>
 
+  <body>
+    <main>
+      <section>
+        <h1>Say Hello!</h1>
+        <form method="GET" action="submit.html">
+          <div class="inputContainer">
+            <label for="name">Your Name</label>
+              <input id="name" type="text" name="username" placeholder="Enter your name" minlength="2" required>
+          </div>
+
+          <hr/>
+
+          <div class="inputContainer">
+            <label>Email</label>
+              <input id="email" type="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <hr/>
+
+          <div class="inputContainer">
+            <label for="services">Selected Services</label>
+              <select name="services" required>
+                <option value="" selected disabled>Choose a Service</option>
+                <option value="ECO">Economy</option>
+                <option value="PECO">Premium Economy</option>
+                <option value="BUS">Business</option>
+                <option value="FC">First Class</option>
+              </select>
+          </div>
+
+          <hr/>
+
+          <div class="inputContainer">
+            <label for="budget">Budget</label>
+              <select name="budget" required>
+                <option value="" selected disabled>Choose a Budget</option>
+                <option value="LOW">£0 - £499</option>
+                <option value="BUD">£500 - £999</option>
+                <option value="MID">£1000 - £2499</option>
+                <option value="PRO">£2500 - £4999</option>
+                <option value="TOP">£5000 - £10000</option>
+              </select>
+          </div>
+
+          <hr/>
+
+          <div class="inputContainer">
+            <label for="comment">Message</label>
+              <textarea name="comment" placeholder="Your Message Here..." rows="8" maxlength="200"></textarea>
+          </div>
+
+          <hr/>
+
+          <div class="inputContainer submit">
+            <input type="submit" value="Submit &#10145;">
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>

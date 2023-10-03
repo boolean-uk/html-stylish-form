@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(69,189,252);
+    background: linear-gradient(90deg, rgba(69,189,252,1) 0%, rgba(155,49,215,1) 59%);
+}
+
+/* Form */
+
+main {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    display: grid;
+    grid-template: 75px 1fr / 1fr;
+    background-color: #fff;
+    width: 500px;
+    border-radius: 10px;
+    padding: 2.5rem;
+    height: 910px;
+}
+
+section > h1 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+/* Input */
+
+.inputContainer {
+    padding: 1rem 0;
+}
+
+input, select, textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+input, select {
+    height: 50px;
+}
+
+
+label, input {
+    display: block;
+}
+
+input:invalid, select:invalid {
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: gray;
+    padding-bottom: 0.5rem;
+}
+
+input::placeholder, textarea::placeholder {
+    color: gray;
+    opacity: 0.6;
+}
+
+/* Submission */
+
+.submit > input {
+    background: linear-gradient(90deg, rgba(69,189,252,1) 0%, rgba(155,49,215,1) 59%);
+    padding: 0 1rem;
+    border-radius: 40px;
+    color: #fff;
+    opacity: 1;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* Thank you page */
+
+.thanks, article {
+    display: grid;
+    grid-template: 75px 1fr / 1fr;
+}
+
+header > h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+article {
+    justify-items: center;
+}
+
+article > p {
+    text-align: center;
+}
+
