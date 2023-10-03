@@ -62,3 +62,23 @@ textarea{
     display: inline-block;
     height: 100px;
 }
+
+/*animations*/
+
+button:hover {
+    box-shadow: 3px 3px 5px gray;
+    transition-duration: 0.2s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover::after,
+button:hover::before {
+    display: inline-block;
+    content: url("https://img.freepik.com/premium-vector/hand-drawn-grizzly-bear-sitting-pose_9645-2569.jpg?w=740");
+    transform: scale(0.2, 0.2);
+    padding: 0;
+    margin: 0; 
+    width:fit-content;
+    height: fit-content;
+} 
