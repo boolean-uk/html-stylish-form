@@ -8,6 +8,51 @@
     <title>Stylish Form</title>
   </head>
   <body>
-
+    <main>
+      <div class="form">
+        <h1 class="title">Say Hello!</h1>
+          <div class="name-section">
+          <form method="get" action="submit.html"></form>
+          <label for="name">Your Name</label>
+          <input id="name" type="text" name="username" placeholder="Enter your name" min="2" required>
+        </div>
+      <hr>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" type="email" placeholder="Enter your email address here" required>
+        </div>
+      <hr>
+        <div class="services-required">
+          <label for="services">Selected Services</label>
+            <select name="services" required>
+              <option value="Jason Statham Smile"></option>
+              <option value="A Vinod joke"></option>
+              <option value="A Jason Statham hug"></option>
+              <option value="A Vinod hug"></option>
+              <option value="All of the above"></option>
+            </select>
+        </div>
+      <hr>
+        <div class="budget">
+          <label for="budget">Budget</label>
+          <select name="budget" id="budget">
+            <option value="I have no money"></option>
+            <option value="I want money but don't have any"></option>
+            <option value="I have a little money"></option>
+            <option value="I have a good amount of money"></option>
+            <option value="I bathe in money."></option>
+          </select>
+        </div>
+      <hr>
+        <div class="message">
+          <label for="message">Your Message</label>
+          <textarea name="message" placeholder="Your Message Here..." rows="10" maxlength="150"></textarea>
+        </div>
+      <hr>
+        <div class="submit-button">
+          <input type="submit" value="submit">
+        </div>
+      </div>
+    </main>
   </body>
 </html>
