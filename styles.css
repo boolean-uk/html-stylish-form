@@ -183,6 +183,7 @@ grid-area:budget-con  ;
 grid-area: message-con;
     /* border: black 1px dashed; */
     border-bottom: silver 2px solid;
+    /* overflow:hidden; */
 }
 
 
@@ -202,9 +203,11 @@ grid-area: message-con;
     color: grey;
     border: none;
     /* position: fixed; */
-   
-    
-    
+
+    width: 90%;
+    max-height: 90%;
+   resize: none;
+   /* resize: both; */
     
 }
 
