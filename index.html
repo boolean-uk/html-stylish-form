@@ -8,6 +8,40 @@
     <title>Stylish Form</title>
   </head>
   <body>
-
+    <main class="main">
+      <form class="form">
+        <div class="form-container">
+          <header class="header">
+            <h1>Say Hello!</h1>
+          </header>
+          <div class="input-container">
+            <label class="form-label" for="your-name">Your Name
+              <input type="text" placeholder="Enter your name" name="name">
+            </label>
+            <label class="form-label" for="email">Email
+              <input type="text" placeholder="Enter your email address" name="email">
+            </label>
+            <label class="form-label" for="services">Needed Services
+              <select name="services">
+                <option>Needed Services</option>
+                <option>Web Development</option>
+                <option>Cookies</option>
+              </select>
+            </label>
+            <label class="form-label" for="budget">Budget
+              <select name="budget">
+                <option>Select Budget</option>
+                <option>£500</option>
+                <option>£1,000</option>
+                <option>£10,000</option>
+              </select>
+            </label>
+            <label class="form-label" for="Message">
+              <textarea name="message" cols="50" rows="4" minlength="100" maxlength="100"></textarea>
+            </label>
+          </div>
+        </div>
+      </form>
+    </main>
   </body>
 </html>
