@@ -3,11 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Stylish Form</title>
   </head>
-  <body>
 
+  <body> 
+    <main>
+      <article class="mainContent">
+        <section class="signUpMain">
+          <div class="title">
+            <h1>Say Hello!</h1>
+          </div>
+          <form action="thankYou.html" class="signUp">
+          <label class="yourName">
+            <p>Your Name</p>
+            <input type="text" name="name" autocomplete="off" placeholder="Enter your name" required>
+          </label>
+
+          <hr>
+          <label class="email">
+            <p>Email</p>
+            <input type="email" name="email" autocomplete="off" placeholder="Enter your email" required>
+          </label>
+
+          <hr>
+          <label class="ServicesDropdown">
+            <p>Needed service</p>
+            <select name="service" required>
+              <option value="na">Choose Servise</option>
+              <option value="service1">1st</option>
+              <option value="service2">2nd</option>
+              <option value="service3">3rd</option>
+              <option value="service4">4th</option>
+              <option value="service5">5th</option>
+            </select>
+          </label>
+
+          <hr>
+          <label class="budgetDropdown">
+            <p>Budget</p>
+            <select name="budget" required>
+              <option value="">Select</option>
+              <option value="">$10-20</option>
+              <option value="">$20-70</option>
+              <option value="">$70-150</option>
+              <option value="whale">$150+</option>
+            </select>
+          </label>
+
+          <hr>
+          <label class="message">
+            <p>Message</p>
+            <input type="text" name="message" placeholder="Your message here">
+          </label>
+
+          <hr class="lastHr">
+          <button type="submit">Submit &#x27A1</button>
+
+          </form>
+        </section>
+      </article>
+    </main>
   </body>
 </html>
