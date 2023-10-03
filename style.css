@@ -1,0 +1,145 @@
+.container-layout {
+    display: grid;
+
+    color: white;
+    background: linear-gradient( to left,  rgb(140, 220, 185), rgb(140, 220, 185));
+    margin: 50px 190px  0px 190px;
+
+
+    grid-template:
+    "leftside                  mainside                     rightside " minmax(800px, 1fr)/
+     300px                        1fr                            300px;
+}
+
+
+.mainbar {
+    display: grid;
+    margin: 20px 0px 20px 0px;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    border: solid 1px black;
+
+
+    grid-template: 
+    "header                     header                  header" auto
+    "mainleft                  mainmain                mainright" 1fr /
+     100px                      300px                      100px  ;
+}
+
+
+.login {
+    grid-area: header;
+    background-color: darkgrey;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+
+}
+
+.leftside {
+    grid-area: mainleft;
+}
+
+.rightside {
+    grid-area: mainright;
+}
+
+.mainside {
+    /* margin: 30px; */
+    grid-area: mainmain;
+}
+
+.mainbar > h1 {
+    text-align: center;
+}
+
+
+
+.space {
+    margin-top: 20px;
+    background-color: white;
+}
+
+
+input {
+    border: none;
+}
+
+
+.bio {
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+
+    .container-layout {
+
+        margin: 50px 50px  0px 50px;
+        grid-template:
+        "leftside                  mainside                     rightside " minmax(800px, 1fr)/
+        50px                        1fr                            50px;
+    }
+
+    .mainbar {
+        display: grid;
+        margin: 40px 0 40px 0;
+        background-color: white;
+        border-radius: 15px;
+        color: black;
+    
+    
+        grid-template: 
+        "header                     header                  header" auto
+        "mainleft                  mainmain                mainright" 1fr /
+        10px                         1fr                       10px  ;
+    }
+
+    html 
+}
+
+
+
+button {
+    width: 100%;
+    margin-top: 35px;
+    padding: 10px 0;
+    background: linear-gradient( to left, rgb(140, 220, 185), rgb(140, 220, 185));
+    border-radius: 15px;
+}
+
+
+@media  screen and (max-width:600px) {
+    .space {
+        /* text-align: center; */
+        margin-top: 20px;
+        background-color: white;
+    }
+
+    .mainbar {
+        display: grid;
+        margin: 20px 0px 20px 0px;
+        background-color: white;
+        border-radius: 15px;
+        color: black;
+        border: solid 1px black;
+    
+    
+        grid-template: 
+        "header                     header                  header" auto
+        "mainleft                  mainmain                mainright" 1fr /
+         5px                      300px                      5px  ;
+    }
+
+}
+
+/* @media screen and (max-height:500px) {
+    /* pls how can i resize the page if the height is short , i guess i have forggetn 
+} */ 
