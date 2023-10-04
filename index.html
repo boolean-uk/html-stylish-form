@@ -4,10 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>Stylish Form</title>
   </head>
   <body>
+    <form action="./images/" method="post">
+      <div class="main">
+         <h1>Say Hello !</h1>
 
+         <div class="name">
+          <label>
+            <p>Your Name</p>
+            <input type="text"  placeholder="Enter Your Name" required>
+          </label>
+         </div>
+         <hr>
+
+          <div class="email">
+            <p>Email</p>
+             <input type="email" placeholder="Enter your email adress" required>
+          </div>
+          <hr>
+         <div class="grid">
+          <div class="services-available">
+            <p class="paragraph">Needed Services</p>
+            <label class="label"><strong>Choose Services</strong></label>
+              <select name="services" id="services" class="services">
+                <option value=""></option>
+                <option value="cleaning">cleaning</option>
+                <option value="baking">baking</option>
+                <option value="gardening">gardening</option>
+              </select>
+           
+          
+          </div>
+          <hr>
+
+          <div class="budget">
+            <p>Budget</p>
+            <label><strong>Select Budget</strong></label>
+              <select name="budget" id="budget">
+                <option value=""></option>
+                <option value="100-1000">100-1000</option>
+                <option value="1000-5000">1000-5000</option>
+                <option value="5000+">5000+</option>
+              </select>
+          </div>
+          <hr>
+
+          <div class="message">
+            <label for="message">Message</label>
+              <textarea name="message" id="message" cols="20" rows="8" placeholder="your message here..."></textarea>
+          </div>
+        </div>
+          <hr>
+
+          <div class="submit">
+            <input type="submit">
+          </div>
+      </div>
+    </form>
+    <br>
   </body>
 </html>
