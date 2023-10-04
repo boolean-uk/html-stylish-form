@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Stylish Form</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Say Hello!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="grid">
+  <div class="container">
+    <h1>Say Hello!</h1>
+    <form action="submitpage.html" method="get">
+    <label for="name">Your name</label>
+    <br><br>
+    <input type="text" placeholder="Enter your name" required style="height: 30px; width: 200px;">
+    <br><br>
+    <hr>
+    <br><br>
+    <label for="email">Email</label>
+    <br><br>
+    <input type="email" placeholder="Enter your email address" required style="height: 30px; width: 300px;">
+    <br><br>
+    <hr>
+    <br><br>
+    <label for="NS">Needed Services</label>
+    <br><br>
+    <select name="Need" id="NS" required style="width: 380px;">
+      <option value="CHS">Choose Services</option>
+      <option value="ELCT">Electrician</option>
+      <option value="PLMBR">Plumber</option>
+      <option value="MCHNC">Mechanic</option>
+      <option value="PNT">Painter</option>
+    </select>
+    <br><br>
+    <hr>
+    <br><br>
+    <label for="SB">Select Budget</label>
+    <br><br>
+    <select name="Budget" id="SB" required style="width: 380px;">
+      <option value="Select">Select Budget</option>
+      <option value="">50000$</option>
+      <option value="">70000$</option>
+      <option value="">80000$</option>
+      <option value="">90000$</option>
+    </select>
+    <br><br>
+    <hr>
+    <br>
+    <label for="MS">Message</label>
+    <br>
+    <textarea name="Message" id="MS" cols="30" rows="5"></textarea>
+    <hr>
+    <br><br>
+    <button>Submit → </button>
+  </div>
+    
 
-  </body>
+  </form>
+  
+</body>
 </html>
