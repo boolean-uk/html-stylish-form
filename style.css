@@ -87,3 +87,7 @@ select.minimal {
     width: 85%;
     border: 0
   }
+
+input:invalid, select:invalid {
+    border: 2px rgb(255, 174, 174) solid;
+}
