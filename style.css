@@ -18,18 +18,18 @@ section.lets-go {
     justify-content: center;
 }
 
-.form h2 {
+form h2 {
     text-align: center;
     padding-bottom: 10px;
 }
 
-.form p {
+form p {
     font-size: 10px;
     padding-left: 20px;
     padding-bottom: 12px;
 }
 
-.form {
+form {
     background-color: white;
     border-radius: 10px;
     width: 300px;
@@ -39,7 +39,7 @@ section.lets-go {
     margin-top: 50px;
 }
 
-.form input {
+form input {
     font-size: 15px;
     height: 20px;
     width: 85%;
@@ -50,7 +50,7 @@ section.lets-go {
     margin-bottom: 15px;
 }
 
-.form input:nth-child(7) {
+form input:nth-child(7) {
     height: 80px;
 }
 
