@@ -9,34 +9,34 @@
   </head>
   <body>
     <div class="form-container">
-      <form class="form">
+      <form class="form" method="POST" action="submit.html">
         <div class="input-container">
           <header class="header">
             <h1>Say Hello!</h1>
           </header>
           <label class="form-label" for="your-name">Your Name
-            <input type="text" placeholder="Enter your name" name="name">
+            <input type="text" placeholder="Enter your name" name="name" required>
           </label>
           <label class="form-label" for="email">Email
-            <input type="text" placeholder="Enter your email address" name="email">
+            <input type="text" placeholder="Enter your email address" name="email" required>
           </label>
           <label class="form-label" for="services">Needed Services
-            <select name="services">
-              <option>Choose Services</option>
+            <select name="services" required>
+              <option value="" disabled selected>Choose Services</option>
               <option>Web Development</option>
               <option>Cookies</option>
             </select>
           </label>
           <label class="form-label" for="budget">Budget
-            <select name="budget">
-              <option>Select Budget</option>
+            <select name="budget" required>
+              <option value="" disabled selected>Select Budget</option>
               <option>£500</option>
               <option>£1,000</option>
               <option>£10,000</option>
             </select>
           </label>
           <label class="form-label" for="Message">Message
-            <textarea name="message" cols="50" rows="4" minlength="100" maxlength="100" placeholder="Your message here..."></textarea>
+            <textarea name="message" cols="50" rows="4" minlength="100" maxlength="100" placeholder="Your message here..." required></textarea>
           </label>
           <button class="submit">Submit -></button>
         </div>
