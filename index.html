@@ -6,8 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Stylish Form</title>
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-
+    <main class="container">
+      <form action="confirm.html" class="form">
+        <h2 class="title">Say Hello!</h2>
+        <label class="item">
+          <span class="item-title">Your Name</span>
+          <input
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            min="3"
+            required
+            class="item-input"
+          />
+        </label>
+        <label class="item">
+          <span class="item-title">Email</span>
+          <input
+            placeholder="Enter your email address"
+            required
+            type="email"
+            name="email"
+            class="item-input"
+          />
+        </label>
+        <label class="item">
+          <span class="item-title">Needed Services</span>
+          <select name="services" class="item-selector" required>
+            <option value="" class="item-option">Choose Services</option>
+            <option value="ServiceOne" class="item-option">Service One</option>
+            <option value="serviceTwo" class="item-option">Service Two</option>
+            <option value="serviceThree" class="item-option">
+              Service Three
+            </option>
+          </select>
+        </label>
+        <label class="item">
+          <span class="item-title">Budget</span>
+          <select name="budget" class="item-selector" required>
+            <option value="" class="item-option">Select Budget</option>
+            <option value="budgetOne" class="item-option">Budget One</option>
+            <option value="budgetTwo" class="item-option">Budget Two</option>
+            <option value="budgetThree" class="item-option">
+              Budget Three
+            </option>
+          </select>
+        </label>
+        <label class="item">
+          <span class="item-title">Message</span>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            minlength="10"
+            maxlength="300"
+            class="item-message"
+            placeholder="Your message here please..."
+            required
+          ></textarea>
+        </label>
+        <input type="submit" value="Submit →" class="button" />
+      </form>
+    </main>
   </body>
 </html>
