@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* -----------Root Elements-------------- */
+:root {
+  --ff: Arial, Helvetica, sans-serif;
+  --l-grad: linear-gradient(to top right, #2f7088, #9622b6);
+  --l-grad-1: linear-gradient(to right, #e43bf6, #62d6dc);
+  --clr-Valid: purple;
+  --white: #fff;
+  --texts: #96979a;
+  --placeholder: #dedede;
+  --font-weight-1: 100;
+  --width-cover: 100%;
+}
+
+html {
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+  font-family: var(--ff);
+}
+main {
+  background: var(--l-grad);
+  min-height: 100dvh;
+  height: auto;
+  padding: 80px 15px;
+  width: var(--width-cover);
+}
+.confirm-title {
+  color: var(--white);
+  font-size: 80px;
+  margin: 0 auto;
+}
+.container {
+  width: var(--width-cover);
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  background: var(--l-grad);
+}
+
+/* ---------------------Form------------------------ */
+
+.form {
+  display: grid;
+  grid-template-rows: repeat(7, auto);
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 35px 45px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.title {
+  place-items: center;
+  margin-bottom: 35px;
+  font-size: 40px;
+}
+
+.item {
+  display: grid;
+  grid-template-rows: auto;
+  width: var(--width-cover);
+  min-height: 50px;
+  margin-bottom: 25px;
+}
+
+.item-title {
+  color: var(--texts);
+  font-weight: calc(var(--font-weight-1) * 7);
+  font-size: 13px;
+}
+
+.item-input {
+  height: 50px;
+  border: none;
+  border-bottom: 3px solid #dadada;
+  font-size: 16px;
+  transition: all 0.2s ease-in;
+}
+
+.item-input::placeholder {
+  color: var(--placeholder);
+  font-weight: calc(var(--font-weight-1) * 4);
+  text-transform: capitalize;
+}
+
+.item-input:focus {
+  border-bottom-color: #b3b3b3;
+}
+
+.item-selector {
+  background: none;
+  border: none;
+  height: 50px;
+  border-bottom: 3px solid #dadada;
+  font-size: 16px;
+}
+
+.item-message {
+  border-bottom: 3px solid #dadada;
+  resize: vertical;
+  font-size: 16px;
+  width: var(--width-cover);
+  border: none;
+  background: none;
+  padding-top: 15px;
+}
+
+.item-message::placeholder {
+  color: var(--placeholder);
+  font-weight: calc(var(--font-weight-1) * 4);
+  text-transform: capitalize;
+}
+
+.button {
+  width: var(--width-cover);
+  padding: 15px 10px;
+  border-radius: 100px;
+  color: var(--white);
+  font-size: 16px;
+  background: var(--l-grad-1);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  font-weight: calc(var(--font-weight-1) * 5);
+}
