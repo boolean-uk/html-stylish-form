@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: repeat(auto, 40px);
+    place-content: center;
+    background: linear-gradient(to top right, rgb(0, 204, 255), rgb(210, 0, 255));
+}
+
+.form {
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form .header {
+    text-align: center;
+}
+
+.form-container .input-container .form-label *, textarea::placeholder {
+    font-size: 16px;
+    width: auto;
+    outline: none;
+    border: none;
+}
+
+.form-container .input-container .form-label {
+    display: grid;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(156, 156, 156);
+    border-bottom: 2px solid rgb(200, 200, 200);
+}
+
+.form-container .input-container .form-label textarea::placeholder, input::placeholder {
+    font-weight: bold;
+    color: rgb(222, 222, 222);
+    
+}
+
+.form-container .input-container .form-label select, option {
+    height: 40px;
+    font-weight: bold;
+    color: rgb(101, 101, 101);
+    
+}
+
+.form-container .input-container .submit {
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 16;
+    border-radius: 25px;
+    border: none;
+    
+    background: linear-gradient(to left, rgb(0, 204, 255), rgb(210, 0, 255));
+}
+
+.form-container .input-container .submit:hover {
+    background: linear-gradient(to left, rgb(0, 164, 215), rgb(170, 0, 215));
+}
+
+
+
+
+
+
+
