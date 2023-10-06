@@ -6,8 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Stylish Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
+
+    <div class="container">
+      <div class="left"></div>
+
+      <div class="middle">
+        <div class="middle-con">
+          <div class="say-hello-con">
+            <h1>Say Hello!</h1>
+          </div>
+          <div class="your-name-con">
+            
+            <form>
+              <label>Your Name
+                <input  type="text" name="name" placeholder="Enter your name" required> 
+              </label>
+          </div>
+          <div class="email-con">
+            
+
+            <label class="email-label">Email
+              <input class="email-input" type="email" name="email" placeholder="Enter your email address" required> 
+            </label>
+
+          </div>
+          <div class="choose-services-con">
+            <div class="services-con">
+
+            <label class="services-label">Needed Services
+      <select class="services-select" name="services-needed" id="">
+        <option value="Choose-Services">Choose Services</option>
+        <option value="Cleaner">Cleaner</option>
+        <option value="Painter">Painter</option>
+        <option value="Carpenter">Carpenter</option>
+        <option value="
+        Electrician">
+        Electrician</option>
+        <option value="Gardener">Gardener</option>
+      </select>
+    </label>
+  </div>
+          </div>
+          <div class="budget-con">
+            <div class="budget-con-wrap">
+
+              <label class="budget-label">Budget
+                <select class="budget-select" name="budget-select" id="">
+                  
+                  <option value="Select-Budget">Select Budget</option>
+                  <option value="100-300">£100-£300</option>
+                  <option value="400-700">£400-£700</option>
+                  <option value=">1000">£1000 +</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="message-con">
+            <div class="message-con-wrap">
+
+              <label class="message-label">Message
+                <textarea class="message-text-area" name="" id="" cols="40" rows="9" minlength="10">Your Message Here...</textarea>
+              </label>
+            </div>
+          </div>
+          <div class="submit-button-con">
+            <button class="submit-button" type="submit">Submit <span>&#8594;</span></button>
+          </div>
+        </div>
+
+
+      </div>
+    </form>
+      <div class="right"></div>
+
+    </div>
 
   </body>
 </html>
