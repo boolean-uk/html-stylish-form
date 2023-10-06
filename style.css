@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #00000050;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #59bede 20%, #c53ef1);
+  display: grid;
+  grid-template-areas: ". main .";
+  grid-template-columns: 1fr minmax(300px, 500px) 1fr;
+  gap: 25px;
+}
+
+.maincontainer {
+  grid-area: main;
+  align-self: center;
+  height: 800px;
+  margin: 10% 0;
+  padding: 2rem 3rem;
+  background-color: white;
+  border-radius: 15px;
+}
+
+form {
+  display: grid;
+  grid-row: repeat(auto-fit, minmax(50px, auto));
+  gap: 2rem;
+}
+
+.maincontainer .title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #313335;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+form div {
+  display: grid;
+  grid-template-rows: auto auto;
+  border: solid 0px #00000030;
+  border-bottom-width: 2px;
+}
+
+form div label {
+  align-self: end;
+  color: #555;
+}
+
+form div input {
+  padding: 0.5rem 0rem 1rem;
+  font-size: 18px;
+  border: none;
+}
+
+form div select {
+  padding: 0.5rem 0rem 1rem;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+}
+
+form div #message {
+  padding-bottom: 7rem;
+}
+
+.submitcontainer {
+  border: none;
+}
+
+.submitcontainer button {
+  text-align: center;
+  background: linear-gradient(270deg, #59bede 20%, #c53ef1);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 15px;
+}
