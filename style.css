@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(to top right, rgb(0, 162, 255), rgb(177, 0, 177));
+    /* padding: 40px 20%; */
+    display: grid;
+    place-content: center;
+    /* padding-top: 60px; */
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+form {
+    box-sizing: border-box;
+    height: 800px;
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px
+}
+
+h1 {
+    text-align: center;
+    margin: 0px 0px 40px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    background-color: lightgrey;
+    height: 2px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+input {
+    border: none;
+    padding: 15px 0px; 
+}
+
+textarea, select {
+    border: none;
+    margin:  10px 0px;
+}
+
+button {
+    width: 370px;
+    margin-top: 15px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(to left, rgb(0, 162, 255), rgb(177, 0, 177));
+    color: white;
+}
