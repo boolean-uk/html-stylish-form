@@ -1,0 +1,93 @@
+* {
+    font-family: cool-font;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: cool-font;
+    src: url(YoungSerif-Regular.ttf);
+}
+
+body {
+    background: rgb(204,255,59);
+    background: linear-gradient(90deg, rgb(147, 147, 147) 0%, rgba(255,60,175,1) 44%, rgba(0,212,255,1) 100%);
+}
+
+section.lets-go {
+    justify-content: center;
+}
+
+form h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+form p {
+    font-size: 10px;
+    padding-left: 20px;
+    padding-bottom: 12px;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+    filter: drop-shadow(2px 2px 1mm rgb(0, 0, 0));
+    margin: auto;
+    margin-top: 50px;
+}
+
+form input {
+    font-size: 15px;
+    height: 20px;
+    width: 85%;
+    border: 0px solid white;
+    padding-left: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+form input:nth-child(7) {
+    height: 80px;
+}
+
+hr {
+    width: 90%;
+    border-top: 2px solid rgb(184, 184, 184);
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 15px;
+    border: 0;
+    margin: auto;
+    display: block;
+    padding: 5px;
+    width: 120px;
+    background: rgb(204,255,59);
+    background: linear-gradient(90deg, rgb(147, 147, 147) 0%, rgb(96, 25, 220) 44%, rgb(255, 142, 142) 100%);
+    color: white;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    cursor:auto
+}
+
+button:hover {
+    filter: drop-shadow(2px 2px 1mm rgb(0, 0, 0));
+}
+
+select.minimal {
+    margin: auto;
+    display: block;
+    width: 85%;
+    border: 0
+  }
+
+input:invalid, select:invalid {
+    border: 2px rgb(255, 174, 174) solid;
+}
