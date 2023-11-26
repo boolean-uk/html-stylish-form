@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Stylish Form</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Stylish Form</title>
+</head>
+
+<body>
+  <main>
+    <section>
+
+      <form action="thanks.html" method="POST">
+        <h1>Say Hello!</h1>
+
+        <div>
+          <p class="required">*</p>
+          <label>Your Name</label>
+          
+            <input class="input" class="bob" type="text" placeholder="Enter your name" name="name" required>
+          <hr>
+        </div>
+
+        <div>
+          <p class="required">*</p>
+          <label>Email</label>
+            <input class="input" type="email" placeholder="Enter your email address" name="email" required/> 
+          <hr>
+        </div>
+
+        <div>
+          <p class="required">*</p>
+          <label>Needed Services</label>
+            <select class="input" required name="services" >
+              <option selected disabled value="">Choose Services</option>
+              <option value="PC Repair">PC Repair</option>
+              <option value="Virus Removal">Virus Removal</option>
+              <option value="Build a PC">Build a PC</option>
+              <option value="Thermal Paste Replacement">Thermal Paste Replacement</option>
+            </select>
+          <hr>
+        </div>
+
+        <div>
+          <p class="required">*</p>
+          
+          <label>Budget</label>
+          <select class="input" required name="budget">
+            <option selected disabled value="">Select Budget</option>
+            <option value="$50 - $200"> $50 - $200</option>
+            <option value="$200 - $500"> $200 - $500</option>
+            <option value="$500 - $1000"> $500 - $1000 </option>
+            <option value="$1000 - $5000"> $1000 - $5000</option>
+          </select>
+          <hr>
+        </div>
+
+        <label>Message</label>
+          <textarea class="input" required name="message" id="#" cols="40" rows="8" placeholder="Your Message Here...">
+          </textarea>
+          <hr>
+          <div>
+            <label>
+              <input class="submit-button input" type="submit" name="submit" value="Submit &#10145;">
+          </label>
+          <br>
+          <p class="required-text">* Missing content required</p>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+</body>
+
 </html>
