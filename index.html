@@ -4,10 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css" />
     <title>Stylish Form</title>
   </head>
   <body>
 
+    <div class="container">
+
+<main>
+
+  <h1 class="title"> Say Hello!</h1>
+
+  <form method="post" action="submit.html">
+
+    <div class="item">
+    <label class="name">Your Name
+      <br>
+      <input type="text" placeholder="Enter your name" required min="0"><span></span>
+    </label>
+   </div>
+
+   <hr>
+
+<div class="item">
+  <label class="email">Email
+    <br>
+    <input type="text" placeholder="Enter your email address" required><span></span>
+  </label>
+</div>
+
+<hr>
+
+<div class="item">
+  
+<label class="needed-service">Needed Services
+  <br>
+<select name="services" required>
+  <option>Choose Service</option>
+  <option>Plasterer</option>
+  <option>Plumber</option>
+  <option>Groundsmen</option>
+  <option>Electritian</option>
+  <option>Gardener</option>
+  <option>Joiner</option>
+  <option>Window fitter</option>
+</select>
+</label>
+</div>
+
+<hr>
+
+<div class="item">
+  <label class="budget">Budget
+    <br>
+    <select name="budget" required>
+      <option>Select Budget</option>
+      <option>£0-£200</option>
+      <option>£200-£500</option>
+      <option>£500-£1000</option>
+      <option>More</option>
+      </select>
+  </label>
+</div>
+
+<hr>
+
+<div class="item">
+  <label class="message">Message
+    <br>
+  <textarea name="message" placeholder="Enter your message here..." cols="30" rows="5" maxlength="200"></textarea>
+</label>
+</div>
+
+<hr>
+
+<div class="submit">
+  <label class="submit">
+  <button>Submit → </button>
+  </label>
+
+  </form>
+</main>
+
+</div>
   </body>
 </html>
