@@ -57,6 +57,7 @@ input {
 
 ::placeholder {
     color: #E2E1E8;
+    font-size: 1.1rem;
 }
 
 textarea {
