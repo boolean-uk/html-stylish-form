@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, #59bde0 10%, #c73ef1 50%);
+}
+
+
+#form {
+    display: grid;
+    height: 80vh;
+    background-color: white;
+    border-radius: 15px;
+    margin: 40px 400px 40px 400px;
+    padding: 40px;
+    grid-template:
+        'top' 30px
+        'contact' 1fr
+        'options' 1fr
+        'msg' 1fr
+        'submit' 60px
+    ;
+    place-items: center;
+}
+
+#form > * {
+    min-width: 0;
+}
+
+h1 {
+    grid-area: top;
+}
+
+.contact-info {
+    grid-area: contact;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.choose {
+    grid-area: options;
+    width: 100%;
+}
+.msg {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#name,
+#email,
+#service,
+#budget {
+    margin: 10px;
+}
+
+.contact-info label,
+.choose label {
+    line-height: 25px;
+    margin: 10px;
+}
+
+.contact-info input {
+    border: 0;
+    border-bottom: 1px solid rgb(53, 52, 52);
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+
+.choose select {
+    border: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(53, 52, 52);
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.msg {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.msg textarea {
+    border: 0;
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid rgb(53, 52, 52);
+    resize: none;
+}
+
+.msg label {
+    line-height: 35px;
+}
+
+.submit {
+    grid-area: submit;
+    width: 70%;
+    height: 100%;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    background: linear-gradient(90deg, #c73ef1 20%, #59bde0 80%);
+    border-radius: 25px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+.submit:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background: #0a12ae;
+}
