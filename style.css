@@ -98,6 +98,10 @@ select:hover{
     cursor: pointer;
 }
 
+input:valid{
+  border: green 1px solid;
+}
+
 @keyframes exit {
 	0% {
 		opacity: 1;
