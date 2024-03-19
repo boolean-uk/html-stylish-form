@@ -8,6 +8,43 @@
     <title>Stylish Form</title>
   </head>
   <body>
+    <main>
+      <h1>Say Hello!</h1>
+      <form action="/thank-you/thank-you.html" class="form-say-hello">
+        <section class="name">
+          <label for="name">Your Name</label>
+          <input type="text" name="name" minlength="5" maxlength="32" placeholder="Enter your name" required />
+        </section>
 
+        <section class="email">
+          <label for="email">Email</label>
+          <input type="email" name="email" maxlength="40" placeholder="Enter your email address" required />
+        </section>
+
+        <section class="services">
+          <label for="needed-services">Needed Services</label>
+          <select name="choose-services" required>
+            <option value="" selected disabled hidden>
+              Choose Services
+            </option>
+            <option value="starter">Starter</option>
+            <option value="advanced">Advanced</option>
+            <option value="professional">Professional</option>
+          </select>
+        </section>
+
+        <section class="budget">
+          <label for="budget">Budget</label>
+          <input type="number" min="1" max="1000" name="budget" placeholder="Select Budget" required />
+        </section>
+
+        <section class="textarea">
+          <label for="message">Message</label>
+          <textarea name="" minlength="20" maxlength="260" placeholder="Your message here..." required></textarea>
+        </section>
+
+          <input type="submit" value="Submit  →" />
+      </form>
+    </main>
   </body>
 </html>
