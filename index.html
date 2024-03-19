@@ -8,6 +8,53 @@
     <title>Stylish Form</title>
   </head>
   <body>
+    <main>
+      <h1>Say Hello!</h1>
+      <form action="#">
+        <label for="your_name">Your Name</label>
+        <input
+          type="text"
+          name="user_name"
+          placeholder="Enter your name"
+          id="your_name"
+        />
 
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email address"
+          id="email"
+        />
+
+        <label for="services">Needed Services</label>
+        <select name="" id="services">
+          <option value="">Choose Services</option>
+          <option value="service1">Service 1</option>
+          <option value="service2">Service 2</option>
+          <option value="service3">Service 3</option>
+          <option value="service4">Service 4</option>
+        </select>
+
+        <label for="budget">Budget</label>
+        <select name="" id="budget">
+          <option value="">Select Budget</option>
+          <option value="budget1">Budget 1</option>
+          <option value="budget2">Budget 2</option>
+          <option value="budget3">Budget 3</option>
+          <option value="budget4">Budget 4</option>
+        </select>
+
+        <label id="text-area" for="textarea">Message</label>
+        <textarea
+          placeholder="Your message here..."
+          id="textarea"
+          cols="30"
+          rows="4"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
   </body>
 </html>
