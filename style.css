@@ -1,6 +1,107 @@
-*{
+* {
     margin: 0;
 }
+
 body {
-    background-color: rgb(36, 110, 120);
+    background: linear-gradient(45deg, #59bde0 10%, #c73ef1 50%);
+    
+}
+
+/* .container {
+    display: grid;
+    height: 80vh;
+    background-color: white;
+    border-radius: 15px;
+    margin: 5% 25% 5% 25%;
+    padding: 40px 50px 40px 50px;
+    grid-template-rows: 30px 1fr 1fr 1fr 30px;
+    place-items: center;
+    gap: 1px;
+} */
+
+#form {
+    display: grid;
+    height: 80vh;
+    background-color: white;
+    border-radius: 15px;
+    margin: 5% 25% 5% 25%;
+    padding: 40px 50px 40px 50px;
+    grid-template-rows: 30px 1fr 1fr 1fr 50px;
+    place-items: center;
+    gap: 1px;
+}
+
+.contact-info {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    /* margin: 10px; */
+    /* margin: 5% 25% 5% 25%; */
+}
+
+#name,
+#email {
+    margin: 10px;
+}
+
+.contact-info label {
+    line-height: 25px;
+    margin: 10px;
+}
+
+.contact-info input {
+    border: 0;
+    border-bottom: 1px solid rgb(53, 52, 52);
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.choose {
+    display: block;
+    width: 100%;
+}
+
+#service,
+#budget {
+    margin: 10px;
+}
+
+.choose label {
+    line-height: 25px;
+    margin: 10px;
+}
+
+.choose select {
+    border: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(53, 52, 52);
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.msg {
+    display: block;
+    margin-bottom: 60px;
+}
+
+.msg textarea {
+    border: 0;
+    height: 150px;
+    border-bottom: 1px solid rgb(53, 52, 52);
+    resize: none;
+}
+
+.msg label {
+    line-height: 35px;
+}
+
+.submit {
+    width: 80%;
+    height: 100%;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 25px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
 }

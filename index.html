@@ -11,60 +11,60 @@
 
 <body>
 
-  <div class="container">
+  <!-- <div class="container"> -->
 
+    <form action="" id="form">
     <h1>Say Hello!</h1>
 
-    <section class="contact-info">
 
-      <label for="name">Your Name</label>
-      <br>
-      <input id="name" type="text" placeholder="Enter your name">
-      <hr>
-      <br>
-      <label for="email">Email</label>
-      <br>
-      <input id="email" type="email" placeholder="Enter your email address">
-      <hr>
+      <section class="contact-info">
 
-    </section>
+        <label for="name">Your Name</label>
 
-    <br>
+        <input id="name" type="text" placeholder="Enter your name">
 
-    <section class="choose">
+        <label for="email">Email</label>
 
-      <label for="service">Needed Services</label>
-      <br>
-      <select name="service" id="service">
-        <option value="service_1">Service 1</option>
-        <option value="service_2">Service 2</option>
-        <option value="service_3">Service 3</option>
-      </select>
-      <hr>
-      <br>
-      <label for="budget">Budget</label>
-      <br>  
-      <select name="budget" id="budget">
-        <option value="low">€1 - €100</option>
-        <option value="low">€101 - €1000</option>
-        <option value="low">€1001 - €10000</option>
-      </select>
-      <hr>
+        <input id="email" type="email" placeholder="Enter your email address">
 
-    </section>
-
-    <section class="msg">
-      <label for="text-area">Message</label>
-      <br>
-      <textarea rows="5" cols="52" class="text-area" placeholder="Your message here..."></textarea>
-    </section>
-
-    <section class="submit">
-      <input type="submit" id="submit" value="Submit ->"/>
-    </section>
+      </section>
 
 
-  </div>
+      <section class="choose">
+
+        <label for="service">Needed Services</label>
+        <select name="service" id="service">
+          <option value="" hidden selected>Choose Services</option>
+          <option value="service_1">Service 1</option>
+          <option value="service_2">Service 2</option>
+          <option value="service_3">Service 3</option>
+        </select>
+
+        <label for="budget">Budget</label>
+        <select name="budget" id="budget">
+          <option value="" hidden selected>Select Budget</option>
+          <option value="low">€1 - €100</option>
+          <option value="low">€101 - €1000</option>
+          <option value="low">€1001 - €10000</option>
+        </select>
+
+      </section>
+
+      <section class="msg">
+        <label for="text-area">Message</label>
+        <br>
+        <textarea rows="5" cols="95" class="text-area" placeholder="Your message here..."></textarea>
+      </section>
+
+      <!-- <section class="submit">
+        <input type="submit" id="submit" value="" />
+      </section> -->
+
+      <button class="submit" type="submit" form="form" value="Submit">Submit</button>
+
+    </form>
+
+  <!-- </div> -->
 
 
 
