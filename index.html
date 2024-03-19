@@ -4,10 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Stylish Form</title>
   </head>
   <body>
+<div class="container">
+
+
+<form>
+  <h1>Say Hello!</h1>
+  <br>
+  <p>Your Name<p>
+<label for="name-input"></label>
+      <input id="name-input" type="text" required="true" placeholder="Enter your name" class="name-input" />
+      <br>
+      <p>Email<p>
+      <label for="email-input"></label>
+      <input id="email-input" type="text" required="true" placeholder="Enter your email address" class="email-input"/>
+<br>
+
+  <h2><label for="car-select">Needed Services:</label></h2>
+<select name="car" id="car-select">
+  <option value="">Choose Services</option>
+  <option value="first_option">Car hire</option>
+  <option value="second_option">Car Purchase</option>
+</select>
+      <br>
+      
+        
+<h2><label for="budget-select">Budget:</label></h2>
+<select name="budget" id="budget-select" >
+  <option value="">Select Budget</option>
+  <option value="budget">Less than or equal to 1000GBP</option>
+  <option value="budget2">more than 1000GBP</option>
+</select>
+      <br>
+      <p>Message</p>
+      <textarea rows="10" cols="52" resize="none" class="text-area" placeholder="Your message here.."></textarea>
+      <br>
+      <input type="submit" class="submit" placeholder="Submit->" />
+      <br>
+      </form>
+
+</div>
+
+
+
 
   </body>
 </html>

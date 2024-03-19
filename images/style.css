@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    /* grid-template-areas: '. content .'; */
+    grid-template-columns: 1fr 45ch 1fr;
+    line-height: 1.5;
+    background-color: yellow;
+}
+
+.container {
+    /* grid-area: content; */
+    display: grid;
+    /* grid-template-areas: '. content .'; */
+    grid-template-columns: 1fr 45ch 1fr;
+    margin: 40px auto;
+    line-height: 1.5;
+    width: 80%;
+    background-color: yellow;
+}
+
+h1, p {
+    margin-bottom: 1rem;
+}
+
+.input-range {
+    accent-color: red;
+}
+
+.text-area {
+    resize: none;
+}
