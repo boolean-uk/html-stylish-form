@@ -8,6 +8,48 @@
     <title>Stylish Form</title>
   </head>
   <body>
-
+    <div class="container">
+      <form action="/thankyoupage.html">
+        <h1>Say Hello!</h1>
+        <label for="name-input">Your Name</label> <br />
+        <input type="text" id="name-input" placeholder="Enter your name" 
+        required/>
+        <span></span>
+        <br />
+        <hr />
+        <label for="email-input">Email</label> <br />
+        <input
+          type="text"
+          id="email-input"
+          placeholder="Enter your email address"
+          required
+        />
+        <span></span>
+        <br />
+        <hr />
+        <label for="service-selection">Required Services</label> <br />
+        <select id="service-selection" required>
+          <option value="" disabled selected hidden>Choose Service</option>
+          <option value="cleaning">Cleaning</option>
+          <option value="disposal">Disposal</option>
+        </select>
+        <br />
+        <hr />
+        <label for="budget">Budget</label> <br />
+        <input id="budget" type="number" placeholder="Select Budget" step="10" min="0" max="100" required/> <br />
+        <hr />
+        <label for="message">Message</label> <br />
+        <input
+          id="message"
+          type="textarea"
+          placeholder="Write your message here..."
+          required
+        />
+        <span></span>
+        <br />
+        <hr />
+        <a href="/thankyoupage.html"><input id="submit-button" type="submit" value="Submit →"/></a>
+      </form>
+    </div>
   </body>
 </html>
