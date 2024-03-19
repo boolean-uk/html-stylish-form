@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(45deg, #59bde0 10%, #c73ef1 50%);
+}
+
+.container {
+    display: grid;
+    height: 80vh;
+    background-color: white;
+    border-radius: 15px;
+    margin: 5% 25% 5% 25%;
+    padding: 40px 50px 40px 50px;
+    grid-template-rows: 30px 1fr 1fr 1fr 50px;
+    place-items: center;
+    gap: 1px;
+}

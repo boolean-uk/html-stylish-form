@@ -12,7 +12,7 @@
 <body>
 
 
-  <form action="" id="form">
+  <form action="./index2.html" id="form">
     <h1>Say Hello!</h1>
 
 
@@ -20,11 +20,11 @@
 
       <label for="name">Your Name</label>
 
-      <input id="name" type="text" placeholder="Enter your name">
+      <input id="name" type="text" placeholder="Enter your name" required="true">
 
       <label for="email">Email</label>
 
-      <input id="email" type="email" placeholder="Enter your email address">
+      <input id="email" type="email" placeholder="Enter your email address" required="true">
 
     </section>
 
@@ -32,7 +32,7 @@
     <section class="choose">
 
       <label for="service">Needed Services</label>
-      <select name="service" id="service">
+      <select name="service" id="service" required="true">
         <option value="" hidden selected>Choose Services</option>
         <option value="service_1">Service 1</option>
         <option value="service_2">Service 2</option>
@@ -40,7 +40,7 @@
       </select>
 
       <label for="budget">Budget</label>
-      <select name="budget" id="budget">
+      <select name="budget" id="budget" required="true">
         <option value="" hidden selected>Select Budget</option>
         <option value="low">€1 - €100</option>
         <option value="low">€101 - €1000</option>
@@ -54,7 +54,6 @@
       <br>
       <textarea rows="5" cols="95" class="text-area" placeholder="Your message here..."></textarea>
     </section>
-
 
 
     <button class="submit" type="submit" form="form" value="Submit">Submit</button>

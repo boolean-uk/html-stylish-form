@@ -3,8 +3,7 @@
 }
 
 body {
-    background: linear-gradient(45deg, #59bde0 10%, #c73ef1 50%);
-    
+    background: linear-gradient(45deg, #59bde0 10%, #c73ef1 50%);    
 }
 
 
@@ -91,4 +90,13 @@ body {
     color: white;
     font-size: large;
     font-weight: bold;
+}
+
+
+.submit:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background: #0a12ae;
 }
