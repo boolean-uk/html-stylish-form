@@ -13,7 +13,37 @@ body {
     border-radius: 15px;
     margin: 5% 25% 5% 25%;
     padding: 40px 50px 40px 50px;
-    grid-template-rows: 30px 1fr 1fr 1fr 50px;
+    grid-template-rows: 30px 50px;
     place-items: center;
-    gap: 1px;
+    gap: 80%;
+}
+
+.submit {
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    background: linear-gradient(90deg, #c73ef1 20%, #59bde0 80%);
+    border-radius: 25px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.submit a {
+    color: white;
+    text-decoration: none;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background: #0a12ae;
 }
