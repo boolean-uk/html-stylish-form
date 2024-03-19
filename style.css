@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 400px 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  grid-template-areas:
+    ". . ."
+    ". main ."
+    ". . .";
+    height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    207deg,
+    rgba(241, 26, 255, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+main {
+  grid-area: main;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 50px 50px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
+h2{
+    margin:0 auto;
+    padding: 0px 0 1rem 0;
+
+}
+
+#thanks h1{
+  margin:0 auto;
+  text-align: center;
+}
+
+#thanks{
+  justify-content: center;
+  display: none;
+}
+
+main label{
+    font-size: .75rem;
+    color: black;
+}
+
+main input{
+    color: lightgray;
+    border: none;
+    font-size: medium
+}
+
+select{
+    border: none;
+    font-weight: 700;
+    font-size: medium
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.button {
+  width: 100%;
+  height: 2.5rem;
+  margin: 0 auto;
+  background: rgb(2,0,36);
+    background: linear-gradient(207deg, rgba(241,26,255,1) 0%, rgba(0,212,255,1) 100%);
+    border-radius: 20px;
+    color: white;
+}
+
+textarea{
+    resize: none;
+    border: none;
+}
+
+.button:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(207deg, rgba(144,21,152,1) 0%, rgba(0,173,208,1) 100%);
+    cursor: pointer;
+}
+
+
+select:hover{
+    cursor: pointer;
+}
+
+@keyframes exit {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+}
+
+@keyframes enter {
+	0% {
+		opacity: 0;
+		transform: translateY(500px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
