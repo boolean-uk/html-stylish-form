@@ -105,6 +105,3 @@ input:last-of-type {
   cursor: pointer;
 }
 
-input:last-of-type::after {
-  content: "kjhkj";
-}
