@@ -19,7 +19,7 @@ body {
 main {
     display: grid;
     grid-template: 
-        'header' 80px
+        'h1' 80px
         'p' minmax(80px, 1fr);
     justify-content: center;
     width: 500px;
@@ -32,14 +32,6 @@ main {
     color: #343133;
 }
 
-header {
-    display: grid;
-    grid-template: 
-        'img h1' / 0px minmax(0px, 1fr);
-    justify-content: center;
-    align-items: center;
-}
-
 main h1 {
     text-align: center;
     font-size: 40px;
@@ -47,8 +39,4 @@ main h1 {
 
 main p {
     font-size: 16px;
-}
-
-img {
-    height: 35px;
 }
