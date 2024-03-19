@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+}
+
+.container {
+    grid-template: 
+    '. main .' 1fr/
+    1fr 1fr 1fr;
+    height: 100vh;
+    background-image: linear-gradient(to top right, rgb(0, 123, 255),rgb(217, 0, 255));
+}
+
+form {
+    grid-area: main;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 2%;
+    margin: 2rem;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+form h1 {
+    place-content: center;
+}
+
+label, input, textarea, select {
+    border: none;
+    outline: none;
+}
+
+label {
+    font-size: small;
+}
+
+input, textarea, select {
+    border-bottom: 1px solid rgb(172, 172, 172);
+    resize: none;
+    font-size: large;
+}
+
+#services, #budget {
+    background-image: none;
+    background-color: none;
+    outline: none;
+}
+
+.submit {
+    border-radius: 40px;
+    background-image: linear-gradient(to right, rgb(217, 0, 255), rgb(0, 123, 255));
+    place-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    outline: none;
+    border: none;
+}
+
+
+
+script, title {
+    display: none;
+}
+
