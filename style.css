@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #59BEDE, #CC3DF4);
+}
+
+main {
+    display: grid;
+    grid-template: 
+        'h1' 70px
+        'form' minmax(70px, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    color: #343133;
+}
+
+main * {
+    width: 400px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+form {
+    display: grid;
+    grid-template: 
+    'name' 70px
+    'email' 70px
+    'services' 70px
+    'budget' 70px
+    'textarea' minmax(70px, 150px)
+    'submit' 70px;
+    gap: 2.5rem;
+}
+
+section {
+    display: grid;
+    grid-template: 
+        'label' 25px
+        'input' minmax(25px, 1fr)
+}
+
+label {
+    font-size: 14px;
+    color: #858F92;
+}
+
+input, textarea, select {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #D7D7D7;
+}
+
+.email input::placeholder, .name input::placeholder, textarea::placeholder {
+    color: #D9D9D9;
+    font-size: 18px;
+}
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color: transparent;
+}
+
+select, .budget input::placeholder {
+    font-size: 18px;
+    color: #343133;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-butto {  
+   opacity: 1;
+}
+
+input:required:focus:valid, textarea:required:focus:valid {
+    background: url();
+}
+
+input:focus:invalid {
+    background: url(/svg/circle.svg) no-repeat 95% 50%;
+    border-bottom: 2px solid red;
+}
+
+textarea:focus:invalid {
+    background: url(/svg/circle.svg) no-repeat 95% 85%;
+    border-bottom: 2px solid red;
+}
+
+input:focus:required:valid {
+    background: url(/svg/check.svg) no-repeat 95% 50%;
+    border-bottom: 2px solid greenyellow;
+}
+
+textarea:focus:required:valid {
+    background: url(/svg/check.svg) no-repeat 95% 85%;
+    border-bottom: 2px solid greenyellow;
+}
+
+.budget input:focus::placeholder {
+    color: transparent;
+}
+
+textarea {
+    resize: none;
+    font-family: sans-serif;
+}
+
+.textarea {
+    display: grid;
+    grid-template: 
+        'label' 28px
+        'textarea' minmax(10px, 1fr)
+        'span' 10px;
+}
+
+input[type=submit] {
+    color: white;
+    background: linear-gradient(.25turn, #E43BF6, #8269E8, #5FCFDC);
+    border-radius: 25px;
+    height: 50px;
+}
+
+input[value="Submit  →"] {
+    font-size: 16px;
+}
