@@ -8,6 +8,54 @@
     <title>Stylish Form</title>
   </head>
   <body>
+    <main>
+        <h1>Say Hello!</h1>
 
-  </body>
+        <form action="./thank-you.html">
+
+          <section>
+            <label for="name-input">Your Name</label>
+            <input type="text" id="name-input"  placeholder="Enter your name" required>
+          </section>
+          
+          <section>
+            <label for="email-input">Email</label>
+            <input type="email" id="email-input" placeholder="Enter your email address" 
+            required>
+          </section> 
+       
+          <section><label for="service-input">Needed Services</label>
+            <select name="services-input" id="service-input">
+              <option value="option-service">Choose Services</option>
+              <option value="crm">CRM</option>
+              <option value="e">Engineering</option>
+              <option value="development">Development</option>
+              <option value="design">Design</option>
+              <option value="finance">Finance</option>
+              <option value="other">Other</option>
+            </select>
+          </section>
+          
+          <section><label for="budget-input">Budget</label>
+            <select name="budget-input" id="budget-input">
+              <option value="option-budget">Select Budget</option>
+              <option value="50-250">£50-£250</option>
+              <option value="251-500">£251-£500</option>
+              <option value="501-1000">£501-£1,000</option>
+              <option value="1001-5000">£1,001-£5,000</option>
+              <option value="5001-10000">£5,001-£10,000</option>
+              <option value="10000+">£10,000 +</option>
+            </select>
+          </section>   
+
+          <section>
+            <label for="message-input">Message</label>
+            <textarea name="message-input" id="" cols="30" rows="10">Your message here...
+            </textarea>
+          </section>
+
+          <input type="submit" id="submit-button" value="Submit &#8594;"/>
+        </form>
+      </main>
+   </body>
 </html>
