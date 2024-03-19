@@ -5,9 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Stylish Form</title>
   </head>
+
   <body>
+    
+    <script>
+      function thanks(){
+        const form = document.getElementById("form")
+        const thanks = document.getElementById("thanks")
+        form.style.animation = "exit .75s ease 0s 1 normal forwards"
+        thanks.style.display = "flex"
+        thanks.style.animation = "enter 2s ease 0s 1 normal forwards"
+      }
+  </script>
+    
+    <main id="thanks"><h1>THANK YOU!</h1></main>
+    
+    <main id="form">
+      <h2>Say Hello!</h2>
+      <br />
+
+      <form action="javascript:thanks()" novalidate>
+        <div class="container">
+          <label for="first-name">First Name</label>
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="Enter your name"
+            required="true"
+          />
+          <hr />
+        </div>
+
+        <br />
+
+        <div class="container">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required="true"
+          />
+          <hr />
+        </div>
+
+        <br />
+
+        <div class="container">
+          <label for="required-services">Required Services</label>
+          <select
+            name="required-services"
+            id="required-services"
+            required="true"
+          >
+            <option value="">Choose Sevices</option>
+            <option value="option-1">Option 1</option>
+            <option value="option-2">Option 2</option>
+          </select>
+          <hr />
+        </div>
+
+        <br />
+        <div class="container">
+          <label for="budget">Budget</label>
+          <select name="budget" id="budget" required="true">
+            <option value="">Select Budget</option>
+            <option value="option-1">Option 1</option>
+            <option value="option-2">Option 2</option>
+          </select>
+          <hr />
+        </div>
+        <br />
+
+        <div class="container">
+          <label for="text-area">Message</label>
+          <textarea
+            id="text-area"
+            cols="30"
+            rows="5"
+            placeholder="Your message here..."
+            required="true"
+          ></textarea>
+          <hr />
+
+          <br />
+        </div>
+        <input
+          type="submit"
+          class="button"
+          id="submit"
+          value="Submit &#8594;"
+        />
+      </form>
+    </main>
 
   </body>
 </html>
