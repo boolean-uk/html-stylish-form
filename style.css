@@ -3,7 +3,7 @@
 }
 
 body {
-    background: linear-gradient(45deg, #59bde0 10%, #c73ef1 50%);    
+    background: linear-gradient(45deg, #59bde0 10%, #c73ef1 50%);
 }
 
 
@@ -12,25 +12,52 @@ body {
     height: 80vh;
     background-color: white;
     border-radius: 15px;
-    margin: 5% 25% 5% 25%;
-    padding: 40px 50px 40px 50px;
-    grid-template-rows: 30px 1fr 1fr 1fr 50px;
+    margin: 5% 25%;
+    padding: 40px;
+    /* grid-template-rows: 30px 1fr 1fr 1fr 50px; */
+    grid-template:
+        'top' 30px
+        'contact' 1fr
+        'options' 1fr
+        'msg' 1fr
+    ;
     place-items: center;
-    gap: 1px;
+    gap: 10px;
+}
+
+h1 {
+    grid-area: top;
 }
 
 .contact-info {
-    display: block;
-    width: 100%;
-    padding: 10px;
+    grid-area: contact;
+    /* width: 100%; */
+    /* margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px; */
+}
+
+
+
+.choose,
+.msg {
+    /* display: block; */
+    /* width: 100%; */
+    /* padding: 10px; */
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #name,
-#email {
+#email,
+#service,
+#budget {
     margin: 10px;
 }
 
-.contact-info label {
+.contact-info label,
+.choose label {
     line-height: 25px;
     margin: 10px;
 }
@@ -43,19 +70,19 @@ body {
 }
 
 .choose {
-    display: block;
-    width: 100%;
+    /* width: 100%; */
+    /* padding: 10px; */
 }
 
-#service,
+/* #service,
 #budget {
     margin: 10px;
-}
+} */
 
-.choose label {
+/* .choose label {
     line-height: 25px;
     margin: 10px;
-}
+} */
 
 .choose select {
     border: 0;
@@ -66,8 +93,7 @@ body {
 }
 
 .msg {
-    display: block;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .msg textarea {
@@ -82,11 +108,11 @@ body {
 }
 
 .submit {
-    width: 80%;
+    width: 70%;
     height: 100%;
     background-color: blueviolet;
     border: 1px solid blueviolet;
-    background: linear-gradient(90deg, #c73ef1 20%,  #59bde0 80%);
+    background: linear-gradient(90deg, #c73ef1 20%, #59bde0 80%);
     border-radius: 25px;
     color: white;
     font-size: large;
