@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 400px 1fr;
+    grid-template-areas: ". form .";
+    background-image: linear-gradient(to top right, rgb(36, 172, 218), purple);
+    height: 100vh;
+    padding: 60px 0px;
+}
+
+form {
+    grid-area: form;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.submit {
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(to right, purple, rgb(36, 172, 218));
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input, select, textarea {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+input, select, textarea {
+    border: none;
+}
