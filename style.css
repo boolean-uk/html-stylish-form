@@ -7,17 +7,6 @@ body {
     
 }
 
-/* .container {
-    display: grid;
-    height: 80vh;
-    background-color: white;
-    border-radius: 15px;
-    margin: 5% 25% 5% 25%;
-    padding: 40px 50px 40px 50px;
-    grid-template-rows: 30px 1fr 1fr 1fr 30px;
-    place-items: center;
-    gap: 1px;
-} */
 
 #form {
     display: grid;
@@ -35,8 +24,6 @@ body {
     display: block;
     width: 100%;
     padding: 10px;
-    /* margin: 10px; */
-    /* margin: 5% 25% 5% 25%; */
 }
 
 #name,
