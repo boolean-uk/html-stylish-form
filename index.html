@@ -8,6 +8,43 @@
     <title>Stylish Form</title>
   </head>
   <body>
+    <main >
+      <section>
+      <h1>Say Hello!</h1>
+      <form >
+        <label for="name">Your Name</label>
+        <br>
+        <textarea name="name" id="name" cols="30" rows="1" placeholder="Enter your name"></textarea>
+        <hr/>
+        <label for="email">Email</label>
+        <br>
+        <input id="email" type="text" placeholder="Enter your name" minlength="8" maxlength="30">
+        <hr>
+        <label for="service">Needed Services</label>
+        <br>
+        <input type="number" name="service" id="number" placeholder="Choose Services" inputmode="numeric" min="0" max="5"/>
 
+        <hr>
+        <label for="budget">Budget</label>
+        <br>
+        <div class="budget">
+          <input name="budget" type="text" placeholder="Select Budgets" class="budgetInp">
+          <ul>
+            <li>100$</li>
+            <li>200$</li>
+            <li>300$</li>
+            <li>400$</li>
+          </ul>
+        </div>
+        <hr>
+        <label for="message">Message</label>
+        <br>
+        <input type="text" name="message" id="message" placeholder="Your message here...">
+        <br>
+        <hr>
+        <input value="Submit &#x2192" type="submit" class="submitbtn">
+      </form>
+      </section>
+    </main>
   </body>
 </html>
