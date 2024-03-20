@@ -4,10 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Stylish Form</title>
   </head>
   <body>
-
+    <main>
+      <h1>Say Hello!</h1>
+      <form>
+        <label for="name-input">Your Name</label>
+        <br>
+        <input id="name-input" type="text" required="true" placeholder="Enter your name">
+        
+        <hr/>
+        
+        <label for="email-input">Email</label>
+        <br>
+        <input id="email-input" type="text" required="true" placeholder="Enter your email address">
+        
+        <hr/>
+        
+        <label for="services-input">Needed services
+        <br>
+          <select name="needed-services" id="services">
+            <option value="service">--Choose Services--</option>
+            <option value="service-one">massage</option>
+            <option value="service-two">sleep</option>
+          </select>
+        </label>
+        <hr/>
+        
+        <label for="budget-input">Budget
+        <br>
+          <select name="budget-input" id="budgets">
+            <option value="budget">--Select Budget--</option>
+            <option value="budget-one">£ 1000</option>
+            <option value="budget-two">£ 100000</option>
+          </select>
+        </label>
+        <hr/>
+        
+        <label for="message-input">Message</label>
+        <br>
+        <textarea name="message" id="message" cols="40" rows="3" placeholder="Your message here..."></textarea>
+        
+        <hr/>
+        
+        <button><p>Submit</p><span class="material-symbols-outlined">
+          trending_flat
+          </span></button>
+      </form>
+    </main>
   </body>
 </html>
